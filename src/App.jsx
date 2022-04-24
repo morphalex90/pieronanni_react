@@ -1,10 +1,11 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import { Routes, Route } from "react-router-dom";
 
 import Homepage from './components/Pages/Homepage';
 import About from './components/Pages/About';
 import Projects from './components/Pages/Projects';
 import Contact from './components/Pages/Contact';
+import PrivacyPolicy from './components/Pages/PrivacyPolicy';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="projects" element={<Projects />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
   )
 }
