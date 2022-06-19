@@ -1,15 +1,21 @@
+import { useState } from 'react'
+
+import Header from './../Layouts/Header';
+import Footer from './../Layouts/Footer';
+
 function Projects() {
     const [count, setCount] = useState(0)
 
     return (
         <>
-            <main>
+            <Header />
+
+            <main id="main-content">
                 <h1>Welcome to the Projects!</h1>
                 <p>You can do this, I believe in you.</p>
             </main>
-            <nav>
-                {/* <Link to="/about">About</Link> */}
-            </nav>
+            
+            <Footer />
         </>
     );
 }
