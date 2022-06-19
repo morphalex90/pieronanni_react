@@ -10,12 +10,12 @@ import PrivacyPolicy from './components/Pages/PrivacyPolicy';
 function App() {
   return (
     <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="about" element={<About />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="privacy-policy" element={<PrivacyPolicy />} />
-      </Routes>
+      <Route path="/" element={<Homepage />} />
+      <Route path="about" element={<About />} />
+      <Route path="projects" element={<Projects />} />
+      <Route path="contact" element={<Contact />} />
+      <Route path="privacy-policy" element={<PrivacyPolicy />} />
+    </Routes>
   )
 }
 
