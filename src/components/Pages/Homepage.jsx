@@ -1,19 +1,18 @@
-import Header from './../Layouts/Header';
-import Footer from './../Layouts/Footer';
+import Layout from './../Layouts/Layout';
 import Synt from './../Layouts/Synt';
 
 function Homepage() {
     return (
         <>
             <Synt />
-            <Header />
+            <Layout className="homepage">
 
-            <main id="main-content">
-                <h1>Welcome to the homepage!</h1>
-                <p>You can do this, I believe in you.</p>
-            </main>
+                <section className="section --centered">
+                    <h1>{'<PieroNanni/>'}</h1>
+                    <p>You can do this, I believe in you.</p>
+                </section>
 
-            <Footer />
+            </Layout>
         </>
     );
 }
