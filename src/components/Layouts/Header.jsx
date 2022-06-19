@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import MainMenu from './MainMenu';
 import Socials from './Socials';
 
-import logo from '../../img/logo.png';
+// import logo from '../../img/logo.png';
 
 function Header() {
     return (
@@ -11,7 +11,8 @@ function Header() {
             <div className="header__container">
                 <div className="header__logo">
                     <Link to="/">
-                        <img src={logo} alt="Logo" title="Logo" />
+                        {/* <img src={logo} alt="Logo" title="Logo" /> */}
+                        <span>{'<PieroNanni />'}</span>
                     </Link>
                 </div>
 
