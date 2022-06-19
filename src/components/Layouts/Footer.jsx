@@ -1,6 +1,5 @@
-
 import MainMenu from './MainMenu';
-import Languages from './Languages';
+// import Languages from './Languages';
 
 function Footer() {
     return (
@@ -11,7 +10,7 @@ function Footer() {
                 </div>
 
                 <div className="footer__languages">
-                    <Languages />
+                    {/* <Languages /> */}
                 </div>
 
                 <div className="footer__copy">
