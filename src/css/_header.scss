@@ -3,6 +3,7 @@
     top: 0;
     width: 100%;
     padding: 20px 0;
+    background-color: #FFF;
 
     &__container {
         display: flex;
@@ -19,6 +20,14 @@
         @media only screen and (min-width: 992px) {
             flex: 0 0 24%;
             max-width: 24%;
+        }
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                color: blue;
+            }
         }
     }
 
