@@ -1,19 +1,10 @@
-import Header from './../Layouts/Header';
-import Footer from './../Layouts/Footer';
+import Layout from './../Layouts/Layout';
 
-function PrivacyPolicy() {
+export default function PrivacyPolicy() {
     return (
-        <>
-            <Header />
-
-            <main id="main-content">
-                <h1>Welcome to the PrivacyPolicy!</h1>
-                <p>You can do this, I believe in you.</p>
-            </main>
-            
-            <Footer />
-        </>
+        <Layout className="privacy-policy">
+            <h1>Welcome to the PrivacyPolicy!</h1>
+            <p>You can do this, I believe in you.</p>
+        </Layout>
     );
 }
-
-export default PrivacyPolicy;
