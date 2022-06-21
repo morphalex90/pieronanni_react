@@ -1,0 +1,39 @@
+.popup {
+    &__wrapper {
+        z-index: 9998;
+        position: fixed;
+        overflow-x: hidden;
+        overflow-y: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    &__title {
+        border-bottom: 1px solid purple;
+        padding-bottom: 10px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    &__close {
+        float: right;
+        cursor: pointer;
+    }
+
+    &__content {
+        z-index: 9999;
+        // position: relative;
+        margin: 10px;
+        background: #FFF;
+        padding: 20px;
+        opacity: 0;
+        transition: opacity .5s linear;
+
+        &.in {
+            opacity: 1;
+        }
+    }
+}
