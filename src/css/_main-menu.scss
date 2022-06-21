@@ -1,0 +1,37 @@
+.main-menu {
+    &.--header {
+        ul {
+            justify-content: center;
+            position: relative;
+    
+            &::before {
+                content: '<PieroNanni>';
+                position: absolute;
+                top: -5px;
+                height: 10px;
+                // width: 10px;
+                // background-color: red;
+                left: calc(50% - 190px);
+    
+                font-family: monospace,monospace;
+            }
+    
+            &::after {
+                content: '</PieroNanni>';
+                position: absolute;
+                top: -5px;
+                height: 10px;
+                // width: 10px;
+                // background-color: blue;
+                right: calc(50% - 190px);
+    
+                font-family: monospace,monospace;
+    
+            }
+
+            li {
+                margin: 0 5px;
+            }
+        }
+    }
+}
