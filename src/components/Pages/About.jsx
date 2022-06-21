@@ -79,7 +79,6 @@ export default function About() {
                 </div>
 
                 <div>
-                    <hr />
                     <p>Since my early years, I have always been passionate about technology, and curious about how things works.</p>
 
                     <p>During high school I discovered the programming world: first with basic HTML, then I expanded my IT background over the years until I was able to create full web sites, for me or who was in need.</p>
