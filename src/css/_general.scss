@@ -43,8 +43,16 @@ a {
     color: #000;
     transition: all 0.4s;
 
-    &:hover {
+    // &:hover {
+    // }
 
+    &.button {
+        display: inline-block;
+        background-color: purple;
+        color: #FFF;
+        padding: 10px 15px;
+        border-radius: 7px;
+        text-decoration: none;
     }
 }
 
@@ -58,6 +66,12 @@ p {
     margin-top: 0;
 }
 
+h1 {
+    &::first-letter {
+        font-size: 30px;
+        color: purple;
+    }
+}
 
 main {
     width: 100%;
@@ -66,7 +80,6 @@ main {
 }
 
 .d-flex {
-
     @media only screen and (min-width: 768px) {
         // padding: 0 16px;
         // padding: 0;
@@ -79,4 +92,17 @@ main {
             flex-basis: 0;
         }
     }
+}
+
+.loading {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 40px;
+    // background-image: url(../img/loader.svg);
+    background-color: purple;
+    border-radius: 50%;
+    z-index: 999;
 }
