@@ -1,6 +1,4 @@
 import { useEffect, useState, useContext } from 'react';
-// import Popup from './Popup';
-
 import { GlobalContext } from '../Context/GlobalContext';
 import '../../css/_projects.scss';
 
