@@ -20,7 +20,7 @@ export default function Layout(props) {
         <>
             <Header />
 
-            <main id="main-content" className={props.className} style={{paddingTop: mainPadding, minHeight: mainHeight}}>
+            <main id="main-content" className={props.className} style={{paddingTop: mainPadding, minHeight: (mainHeight !== null ? mainHeight : '')}}>
                 {props.children}
             </main>
 
