@@ -1,0 +1,16 @@
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+
+    &__single {
+        cursor: pointer;
+
+        &.is-active,
+        &:hover {
+            color: purple;
+        }
+    }
+}
