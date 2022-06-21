@@ -6,8 +6,8 @@ import { JobList } from './../Data/Jobs';
 export default function About() {
 
     const [jobs, setJobs] = useState(JobList);
-    const [yearWidth, setYearWidth] = useState();
-    const [activeJob, setActiveJob] = useState();
+    const [yearWidth, setYearWidth] = useState(0);
+    const [activeJob, setActiveJob] = useState(jobs.length);
 
     // Years timeline
     const startYear = 2011;
