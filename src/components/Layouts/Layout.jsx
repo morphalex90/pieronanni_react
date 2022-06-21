@@ -5,7 +5,7 @@ import Footer from './../Layouts/Footer';
 
 export default function Layout(props) {
 
-    const [mainPadding, setMainPadding] = useState(56);
+    const [mainPadding, setMainPadding] = useState(null);
     const [mainHeight, setMainHeight] = useState(null);
 
 	useEffect(() => {
@@ -20,7 +20,7 @@ export default function Layout(props) {
         <>
             <Header />
 
-            <main id="main-content" className={props.className} style={{paddingTop: mainPadding, minHeight: (mainHeight !== null ? mainHeight : '')}}>
+            <main id="main-content" className={props.className} style={{paddingTop: (mainPadding !== null ? mainPadding : ''), minHeight: (mainHeight !== null ? mainHeight : '')}}>
                 {props.children}
             </main>
 
