@@ -77,6 +77,8 @@ main {
     width: 100%;
     max-width: 95%;
     margin: 0 auto;
+    padding-top: 72px;
+    min-height: calc(100vh - 30.5px);
 }
 
 .d-flex {
