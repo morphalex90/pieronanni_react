@@ -34,10 +34,10 @@
     &__menu {
         width: 100%;
 
-        @media only screen and (min-width: 992px) {
-            flex: 0 0 49%;
-            max-width: 49%;
-        }
+        // @media only screen and (min-width: 992px) {
+        //     flex: 0 0 49%;
+        //     max-width: 49%;
+        // }
     }
 
     &__socials {
