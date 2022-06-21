@@ -7,7 +7,7 @@ export default function Popup() {
     const { popup, setPopup } = useContext(GlobalContext);
     const [open, setOpen] = useState(true);
 
-    useEffect(() => { // open black overlay, wait 50ms to open popup content
+    useEffect(() => { // open black overlay, wait 200ms to open popup content
         setTimeout(function () {
             setOpen(!open);
         }, 200)
