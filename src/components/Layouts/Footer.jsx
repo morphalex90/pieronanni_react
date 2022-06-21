@@ -6,7 +6,7 @@ function Footer() {
         <footer className="footer">
             <div className="footer__container">
                 <div className="footer__menu">
-                    <MainMenu />
+                    <MainMenu position="footer" />
                 </div>
 
                 <div className="footer__languages">
