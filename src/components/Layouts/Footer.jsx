@@ -14,7 +14,7 @@ function Footer() {
                 </div>
 
                 <div className="footer__copy">
-                    <p>{new Date().getFullYear()} &copy; Piero Nanni. Made with &hearts; in Bologna and London</p>
+                    <p>{new Date().getFullYear()} &copy; Piero Nanni. Made with &hearts; in London</p>
                 </div>
             </div>
         </footer>
