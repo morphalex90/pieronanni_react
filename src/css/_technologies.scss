@@ -2,11 +2,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 10px 30px;
     margin-bottom: 30px;
 
     &__single {
         cursor: pointer;
+        transition: all 0.4s;
 
         &.is-active,
         &:hover {
