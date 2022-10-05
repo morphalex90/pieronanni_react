@@ -43,8 +43,9 @@ a {
     color: #fff;
     transition: all 0.4s;
 
-    // &:hover {
-    // }
+    &:hover {
+        color: #ff1493 !important;
+    }
 
     &.button {
         display: inline-block;
@@ -93,6 +94,7 @@ main {
     margin: 0 auto;
     padding-top: 72px;
     min-height: calc(100vh - 30.5px);
+    // overflow: hidden;
 }
 
 .d-flex {
