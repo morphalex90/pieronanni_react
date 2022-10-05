@@ -9,9 +9,9 @@ function Footer() {
                     <MainMenu position="footer" />
                 </div>
 
-                <div className="footer__languages">
-                    {/* <Languages /> */}
-                </div>
+                {/* <div className="footer__languages">
+                    <Languages />
+                </div> */}
 
                 <div className="footer__copy">
                     <p>{new Date().getFullYear()} &copy; Piero Nanni. Made with &hearts; in London</p>
