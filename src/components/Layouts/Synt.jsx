@@ -1,6 +1,3 @@
-
-import sky from '../../images/sky.jpeg'
-
 function Synt() {
 
     const first_step = 8;
@@ -30,12 +27,9 @@ function Synt() {
     return (
         <div className="synt">
             <div className="synt__container">
-                <div className="synt__top">
+                {/* <div className="synt__top"></div> */}
 
-                </div>
-
-                <div className="synt__middle">
-                </div>
+                <div className="synt__background"></div>
 
                 <div className="synt__bottom">
 
