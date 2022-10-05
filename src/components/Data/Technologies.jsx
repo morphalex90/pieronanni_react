@@ -22,7 +22,7 @@ export const TechnologiesData = [
     {
         id: 5,
         name: 'HTML',
-        key: 'html',
+        key: 'html5',
     },
     {
         id: 6,
