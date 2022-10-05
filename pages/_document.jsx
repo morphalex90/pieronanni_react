@@ -25,6 +25,7 @@ class MyDocument extends Document {
                     <a href="#main-content" className="visually-hidden" style={{ color: '#000' }}>Skip to main content</a>
                     <Main />
                     <NextScript />
+                    <div id="modal-root"></div>
                 </body>
             </Html>
         )
