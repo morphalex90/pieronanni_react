@@ -3,7 +3,9 @@
     top: 0;
     width: 100%;
     padding: 20px 0;
-    background-color: #FFF;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    // color: #fff;
 
     &__container {
         display: flex;
