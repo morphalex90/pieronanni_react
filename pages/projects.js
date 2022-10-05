@@ -1,11 +1,8 @@
 import { useState } from 'react'
-import Layout from './../Layouts/Layout';
-import Project from './../Layouts/Project';
-
-import { ProjectsData } from './../Data/Projects';
-import { TechnologiesData } from './../Data/Technologies';
-
-import '../../css/_technologies.scss';
+import Layout from '../components/Layouts/Layout';
+import Project from '../components/Layouts/Project';
+import { ProjectsData } from '../components/Data/Projects'
+import { TechnologiesData } from '../components/Data/Technologies'
 
 export default function Projects() {
     const [projects, setProjects] = useState(ProjectsData);

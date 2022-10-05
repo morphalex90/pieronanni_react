@@ -8,19 +8,19 @@ export default function Layout(props) {
     const [mainPadding, setMainPadding] = useState(null);
     const [mainHeight, setMainHeight] = useState(null);
 
-	useEffect(() => {
-		setInterval(function () {
-			setMainPadding(document.getElementsByClassName('header')[0].offsetHeight);
+    useEffect(() => {
+        setInterval(function () {
+            setMainPadding(document.getElementsByClassName('header')[0].offsetHeight);
             setMainHeight(window.innerHeight - document.getElementsByClassName('footer')[0].offsetHeight);
-		}, 50);
+        }, 50);
 
-	}, []);
+    }, []);
 
     return (
         <>
             <Header />
 
-            <main id="main-content" className={props.className} style={{paddingTop: (mainPadding !== null ? mainPadding : ''), minHeight: (mainHeight !== null ? mainHeight : '')}}>
+            <main id="main-content" className={props.className} style={{ paddingTop: (mainPadding !== null ? mainPadding : ''), minHeight: (mainHeight !== null ? mainHeight : '') }}>
                 {props.children}
             </main>
 

@@ -1,5 +1,5 @@
 
-import sky from '../../img/sky.jpeg';
+import sky from '../../images/sky.jpeg'
 
 function Synt() {
 
@@ -19,7 +19,7 @@ function Synt() {
         <div className="synt">
             <div className="synt__container">
                 <div className="synt__top">
-                    
+
                 </div>
 
                 <div className="synt__middle">
@@ -28,7 +28,7 @@ function Synt() {
                 <div className="synt__bottom">
 
                     {verticalLines.map(line =>
-                        <div key={line} className="line__vertical" style={{ transform: 'translate(' + ((0.25 * (0.65 ** (line)) - 0.25) * 8) + 'px, 0px) rotate(' + ( first_step * (0.975 ** (line)) ) + 'turn)' }}></div>
+                        <div key={line} className="line__vertical" style={{ transform: 'translate(' + ((0.25 * (0.65 ** (line)) - 0.25) * 8) + 'px, 0px) rotate(' + (first_step * (0.975 ** (line))) + 'turn)' }}></div>
                     )}
 
                     {horizontalLines.map(line =>

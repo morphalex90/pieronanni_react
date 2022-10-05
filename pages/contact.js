@@ -1,4 +1,4 @@
-import Layout from './../Layouts/Layout';
+import Layout from '../components/Layouts/Layout';
 
 export default function Contact() {
     return (
@@ -7,8 +7,8 @@ export default function Contact() {
 
             <div className="d-flex">
                 <div>
-                    <p>Thanks for wanting to get in touch! Do you have any questions? Don't esitate to contact me</p>
-                    <p>While you'll be waiting for an answer, treat yourself with some good music from my personal playlist</p>
+                    <p>Thanks for wanting to get in touch! Do you have any questions? Don&#39;t esitate to contact me</p>
+                    <p>While you&#39;ll be waiting for an answer, treat yourself with some good music from my personal playlist</p>
                     <p>Looking forward to hearing from you!</p>
                 </div>
 

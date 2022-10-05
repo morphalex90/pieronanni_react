@@ -53,5 +53,5 @@ export const ProjectsData = [
         publish_date: '2020-04-12',
         images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
     },
-    
+
 ];

@@ -1,5 +1,5 @@
-import Layout from './../Layouts/Layout';
-import Synt from './../Layouts/Synt';
+import Layout from '../components/Layouts/Layout';
+import Synt from '../components/Layouts/Synt';
 
 function Homepage() {
     return (
