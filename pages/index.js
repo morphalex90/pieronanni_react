@@ -24,7 +24,7 @@ function Homepage() {
 
             <Layout className="homepage">
 
-                <motion.section initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 0.2 }} className="section --centered">
+                <motion.section initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 0.2 }} className="section --centered">
                     <h1>{'<PieroNanni/>'}</h1>
                     <h2>You can do this, I believe in you.</h2>
                 </motion.section>
