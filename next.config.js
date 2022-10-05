@@ -4,7 +4,16 @@ const nextConfig = {
   swcMinify: true,
   images: {
     domains: ['www.pieronanni.com'],
-  }
+  },
+  async redirects() {
+    return [
+      {
+        source: '/cv',
+        destination: '/cv.pdf',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig
