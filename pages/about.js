@@ -21,10 +21,8 @@ export default function About() {
     }
 
     useEffect(() => {
-        console.log(document.getElementsByClassName('about__jobs')[0].clientWidth);
-        console.log(currentYear);
         setYearWidth(document.getElementsByClassName('about__jobs')[0].clientWidth / (currentYear - startYear + 1));
-    }, []);
+    }, [currentYear, startYear]);
 
     return (
         <>
