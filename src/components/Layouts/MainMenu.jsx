@@ -5,7 +5,7 @@ function MainMenu(props) {
     const router = useRouter();
 
     return (
-        <nav role="navigation" className={'main-menu' + (props.position ? ' --' + props.position : '')}>
+        <nav className={'main-menu' + (props.position ? ' --' + props.position : '')}>
             <ul>
                 <li><Link href="/"><a title="Home">Home</a></Link></li>
                 <li><Link href="/about"><a className={router.pathname === '/about' ? 'is-active' : null} title="About">About</a></Link></li>
