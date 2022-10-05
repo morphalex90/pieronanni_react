@@ -19,7 +19,7 @@ export default function Projects() {
         if (tech === '*') { // if it's 'All', re load all
             setProjects(ProjectsData);
         } else { // otherwise filter by tech
-            setProjects(ProjectsData.filter(project => project.technology === tech));
+            setProjects(ProjectsData.filter(project => project.technologies.indexOf(tech) > -1));
         }
     }
 
