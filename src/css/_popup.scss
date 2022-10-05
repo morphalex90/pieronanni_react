@@ -12,7 +12,7 @@
     }
 
     &__title {
-        border-bottom: 1px solid purple;
+        border-bottom: 1px solid #ff1493;
         padding-bottom: 10px;
         font-weight: bold;
         margin-bottom: 20px;
@@ -27,10 +27,10 @@
         z-index: 9999;
         // position: relative;
         margin: 10px;
-        background: #FFF;
+        background: #fff;
         padding: 20px;
         opacity: 0;
-        transition: opacity .5s linear;
+        transition: opacity 0.5s linear;
 
         &.in {
             opacity: 1;

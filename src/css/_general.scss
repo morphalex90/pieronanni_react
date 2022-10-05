@@ -48,7 +48,7 @@ a {
 
     &.button {
         display: inline-block;
-        background-color: purple;
+        background-color: #ff1493;
         color: #fff;
         padding: 10px 15px;
         border-radius: 7px;
@@ -67,9 +67,15 @@ p {
 }
 
 h1 {
+    text-align: center;
+
+    @media only screen and (min-width: 768px) {
+        text-align: left;
+    }
+
     &::first-letter {
         font-size: 30px;
-        color: purple;
+        color: #ff1493;
     }
 }
 
@@ -83,8 +89,6 @@ main {
 
 .d-flex {
     @media only screen and (min-width: 768px) {
-        // padding: 0 16px;
-        // padding: 0;
         display: flex;
         flex-wrap: wrap;
         gap: 15px;
@@ -104,7 +108,7 @@ main {
     height: 40px;
     width: 40px;
     // background-image: url(../img/loader.svg);
-    background-color: purple;
+    background-color: #ff1493;
     border-radius: 50%;
     z-index: 999;
 }

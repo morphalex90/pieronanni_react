@@ -5,13 +5,25 @@
 
     &__single {
         width: 100%;
-        max-width: calc(25% - 22.5px);
+        max-width: 100%;
         position: relative;
 
         padding-top: 30px;
         background: #000;
         border-top-left-radius: 0.4rem;
         border-top-right-radius: 0.4rem;
+
+        @media only screen and (min-width: 576px) {
+            max-width: calc(50% - 15px);
+        }
+
+        @media only screen and (min-width: 768px) {
+            max-width: calc(33% - 18px);
+        }
+
+        @media only screen and (min-width: 992px) {
+            max-width: calc(25% - 22.5px);
+        }
 
         &:hover {
             box-shadow: 10px 10px 12px -3px rgb(0 0 0 / 75%);
