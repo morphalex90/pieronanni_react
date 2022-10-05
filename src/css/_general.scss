@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    // font-family: "Montserrat";
+    font-family: "Fira Mono", monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     // background-color: #fcfbff;
@@ -49,7 +49,7 @@ a {
     &.button {
         display: inline-block;
         background-color: purple;
-        color: #FFF;
+        color: #fff;
         padding: 10px 15px;
         border-radius: 7px;
         text-decoration: none;

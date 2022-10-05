@@ -11,7 +11,7 @@ export default function Project(props) {
         <div className="projects__single">
             {/* onClick={e => setPopup(project)} */}
             <div className="projects__single__image">
-                <Image loading="lazy" src={project.images[0]} alt={project.title} title={project.title} typeof="Image" />
+                <Image src={project.images[0]} alt={project.title} title={project.title} width={333} height={200} />
             </div>
 
             <div className="projects__single__content">

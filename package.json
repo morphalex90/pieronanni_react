@@ -9,14 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "jspdf": "^2.5.1",
-    "next": "12.2.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "sass": "^1.54.0"
+    "next": "12.3.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sass": "^1.55.0"
   },
   "devDependencies": {
-    "eslint": "8.20.0",
-    "eslint-config-next": "12.2.3"
+    "@types/node": "17.0.21",
+    "@types/react": "17.0.39",
+    "@types/react-dom": "17.0.11",
+    "eslint": "8.24.0",
+    "eslint-config-next": "12.3.1",
+    "typescript": "4.8.4"
   }
 }

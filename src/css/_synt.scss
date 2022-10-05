@@ -48,7 +48,7 @@
                 box-shadow: 0 0 4px 2px #ff1493, 0 0 4px 1px #ff1493, 0 0 0.0625vw 0.5px #ff1493;
                 transform-origin: top left;
 
-                // animation: GoDown 4s cubic-bezier(0.8, 0, 1, 1) forwards;
+                animation: GoDown 4s cubic-bezier(0.8, 0, 1, 1) forwards;
                 animation-iteration-count: infinite;
                 height: 0;
                 position: absolute;

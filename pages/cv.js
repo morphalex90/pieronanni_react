@@ -1,4 +1,4 @@
-// import Layout from '../components/Layouts/Layout';
+// import Layout from '@/components/Layouts/Layout';
 import { jsPDF } from "jspdf";
 
 export default function Cv() {
