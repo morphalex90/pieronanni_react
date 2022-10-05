@@ -3,8 +3,10 @@ import Head from 'next/head';
 
 import Layout from '@/components/Layouts/Layout';
 import Project from '@/components/Layouts/Project';
-import { ProjectsData } from '@/components/Data/Projects'
-import { TechnologiesData } from '@/components/Data/Technologies'
+import { ProjectsData } from '@/components/Data/Projects';
+import { TechnologiesData } from '@/components/Data/Technologies';
+
+import Synt from '@/components/Layouts/Synt';
 
 export default function Projects() {
     const [projects, setProjects] = useState(ProjectsData);
@@ -35,6 +37,8 @@ export default function Projects() {
                 <meta property="og:url" content={process.env.NEXT_PUBLIC_APP_URL + '/projects'} />
             </Head>
 
+            <Synt />
+
             <Layout>
                 <h1>Projects</h1>
 
@@ -49,7 +53,7 @@ export default function Projects() {
                 {projects.length > 0 &&
                     <div className="projects">
                         {projects.map(project =>
-                            <Project key={project.id} project={project} />
+                            <Project key={project.id} project={project} delay={project.id / 12} />
                         )}
                     </div>
                 }

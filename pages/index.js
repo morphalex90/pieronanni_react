@@ -3,6 +3,8 @@ import Head from 'next/head';
 import Layout from '@/components/Layouts/Layout';
 import Synt from '@/components/Layouts/Synt';
 
+import { motion } from 'framer-motion';
+
 function Homepage() {
     return (
         <>
@@ -19,12 +21,13 @@ function Homepage() {
             </Head>
 
             <Synt />
+
             <Layout className="homepage">
 
-                <section className="section --centered">
+                <motion.section initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 0.2 }} className="section --centered">
                     <h1>{'<PieroNanni/>'}</h1>
-                    <p>You can do this, I believe in you.</p>
-                </section>
+                    <h2>You can do this, I believe in you.</h2>
+                </motion.section>
 
             </Layout>
         </>

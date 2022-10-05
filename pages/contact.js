@@ -1,6 +1,9 @@
 import Head from 'next/head';
 
 import Layout from '@/components/Layouts/Layout';
+import Synt from '@/components/Layouts/Synt';
+
+import { motion } from 'framer-motion';
 
 export default function Contact() {
     return (
@@ -17,23 +20,25 @@ export default function Contact() {
                 <meta property="og:url" content={process.env.NEXT_PUBLIC_APP_URL + '/contact'} />
             </Head>
 
+            <Synt />
+
             <Layout className="contact">
                 <h1>Contact me</h1>
 
                 <div className="d-flex">
-                    <div>
+                    <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.3 }}>
                         <p>Thanks for wanting to get in touch! Do you have any questions? Don&#39;t esitate to contact me</p>
                         <p>While you&#39;ll be waiting for an answer, treat yourself with some good music from my personal playlist</p>
                         <p>Looking forward to hearing from you!</p>
-                    </div>
+                    </motion.div>
 
-                    <div>
+                    <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 0.2 }}>
                         <iframe allow="encrypted-media" allowtransparency="true" frameBorder="0" height="380" src="https://open.spotify.com/embed/playlist/3SjvhmS9oUWxUZehcyhYrT" width="300"></iframe>
-                    </div>
+                    </motion.div>
 
-                    <div>
+                    <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 0.4 }}>
                         Contact form!
-                    </div>
+                    </motion.div>
                 </div>
 
             </Layout>
