@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Modal from '@/components/Layouts/Modal';
+import Modal from '@layouts/Modal';
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';

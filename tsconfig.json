@@ -22,6 +22,12 @@
     "paths": {
       "@/*": [
         "./*"
+      ],
+      "@css/*": [
+        "./css/*"
+      ],
+      "@layouts/*": [
+        "./components/Layouts/*"
       ]
     }
   },
