@@ -12,6 +12,7 @@
         background: #000;
         border-top-left-radius: 0.4rem;
         border-top-right-radius: 0.4rem;
+        transition: box-shadow 0.4s;
 
         @media only screen and (min-width: 576px) {
             max-width: calc(50% - 15px);
@@ -26,7 +27,8 @@
         }
 
         &:hover {
-            box-shadow: 10px 10px 12px -3px rgb(0 0 0 / 75%);
+            // box-shadow: 10px 10px 12px -3px rgb(255 20 147 / 55%);
+            box-shadow: 0 0 10px 1px rgb(255 20 147 / 35%);
 
             .projects__single__image img {
                 transform: translate(0px, -340px);
