@@ -1,5 +1,8 @@
 .main-menu {
     &.--header {
+        z-index: 1;
+        position: relative;
+
         ul {
             justify-content: center;
             position: relative;
