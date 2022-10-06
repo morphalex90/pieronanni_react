@@ -9,6 +9,10 @@ export default function Layout(props) {
     const [mainHeight, setMainHeight] = useState(null);
 
     useEffect(() => {
+        const body = document.body;
+        body.removeAttribute('class');
+        body.classList.add(props.className);
+
         setMainPadding(document.getElementsByClassName('header')[0].offsetHeight);
         setMainHeight(window.innerHeight - document.getElementsByClassName('footer')[0].offsetHeight);
     }, []);
