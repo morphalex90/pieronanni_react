@@ -39,7 +39,7 @@ export default function Projects() {
 
             <Synt />
 
-            <Layout>
+            <Layout className="projects">
                 <h1>Projects</h1>
 
                 {technologies.length > 0 &&
