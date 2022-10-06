@@ -7,7 +7,7 @@ nav {
         list-style-type: none;
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: flex-start;
         height: 100%;
 
         li {
@@ -28,5 +28,5 @@ nav {
     }
 }
 
-@import 'main-menu.scss';
-@import 'socials-menu.scss';
+@import "main-menu.scss";
+@import "socials-menu.scss";
