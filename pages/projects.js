@@ -35,7 +35,7 @@ export default function Projects() {
                 <meta property="og:url" content={process.env.NEXT_PUBLIC_APP_URL + '/projects'} />
             </Head>
 
-            <Layout className="projects">
+            <Layout className="page-projects">
                 <h1>Projects</h1>
 
                 {technologies.length > 0 &&
