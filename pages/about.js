@@ -42,7 +42,7 @@ export default function About() {
             <Synt />
 
             <Layout className="about">
-                <h1>About me</h1>
+                <h1>About</h1>
 
                 <div className="d-flex">
                     <motion.section initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 0.1 }} className="about__jobs">
