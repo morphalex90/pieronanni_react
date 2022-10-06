@@ -24,7 +24,7 @@ export default function Project(props) {
                     <div className="projects__single__tech">
                         {project.technologies.map((tech, id) => {
                             return (
-                                <Image key={id} src={require('../../images/' + tech + '.webp').default} alt={tech} height={20} width={20} />
+                                <Image key={id} src={require('../../img/' + tech + '.webp').default} alt={tech} height={20} width={20} />
                             )
                         })}
                     </div>

@@ -26,6 +26,9 @@
       "@css/*": [
         "./css/*"
       ],
+      "@img/*": [
+        "./img/*"
+      ],
       "@layouts/*": [
         "./components/Layouts/*"
       ]
