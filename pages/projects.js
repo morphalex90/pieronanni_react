@@ -1,12 +1,10 @@
 import { useState } from 'react';
 import Head from 'next/head';
 
-import Layout from '@/components/Layouts/Layout';
-import Project from '@/components/Layouts/Project';
+import Layout from '@layouts/Layout';
+import Project from '@layouts/Project';
 import { ProjectsData } from '@/components/Data/Projects';
 import { TechnologiesData } from '@/components/Data/Technologies';
-
-import Synt from '@/components/Layouts/Synt';
 
 export default function Projects() {
     const [projects, setProjects] = useState(ProjectsData);
@@ -36,8 +34,6 @@ export default function Projects() {
                 <meta property="og:image" content="" />
                 <meta property="og:url" content={process.env.NEXT_PUBLIC_APP_URL + '/projects'} />
             </Head>
-
-            <Synt />
 
             <Layout className="projects">
                 <h1>Projects</h1>

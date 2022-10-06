@@ -1,8 +1,7 @@
 import Head from 'next/head';
 import { motion } from 'framer-motion';
 
-import Layout from '@/components/Layouts/Layout';
-import Synt from '@/components/Layouts/Synt';
+import Layout from '@layouts/Layout';
 
 export default function PrivacyPolicy() {
     return (
@@ -18,8 +17,6 @@ export default function PrivacyPolicy() {
                 <meta property="og:image" content="" />
                 <meta property="og:url" content={process.env.NEXT_PUBLIC_APP_URL + '/privacy-policy'} />
             </Head>
-
-            <Synt />
 
             <Layout className="privacy-policy">
                 <h1>Privacy Policy</h1>

@@ -1,7 +1,6 @@
 import Head from 'next/head';
 
-import Layout from '@/components/Layouts/Layout';
-import Synt from '@/components/Layouts/Synt';
+import Layout from '@layouts/Layout';
 
 import { motion } from 'framer-motion';
 
@@ -19,8 +18,6 @@ function Homepage() {
                 <meta property="og:image" content="" />
                 <meta property="og:url" content={process.env.NEXT_PUBLIC_APP_URL} />
             </Head>
-
-            <Synt />
 
             <Layout className="homepage">
 

@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 
-import Header from './../Layouts/Header';
-import Footer from './../Layouts/Footer';
+import Synt from '@layouts/Synt';
+import Header from '@layouts/Header';
+import Footer from '@layouts/Footer';
 
 export default function Layout(props) {
 
@@ -19,6 +20,7 @@ export default function Layout(props) {
 
     return (
         <>
+            <Synt />
             <Header />
 
             <main id="main-content" className={props.className} style={{ paddingTop: (mainPadding !== null ? mainPadding : ''), minHeight: (mainHeight !== null ? mainHeight : '') }}>

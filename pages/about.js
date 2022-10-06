@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react'
 import Head from 'next/head';
 import { motion } from 'framer-motion';
 
-import Layout from '@/components/Layouts/Layout';
-import Synt from '@/components/Layouts/Synt';
+import Layout from '@layouts/Layout';
 
 import { JobList } from '@/components/Data/Jobs';
 
@@ -38,8 +37,6 @@ export default function About() {
                 <meta property="og:image" content="" />
                 <meta property="og:url" content={process.env.NEXT_PUBLIC_APP_URL + '/about'} />
             </Head>
-
-            <Synt />
 
             <Layout className="about">
                 <h1>About</h1>
