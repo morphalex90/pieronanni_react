@@ -59,7 +59,8 @@
                 position: absolute;
                 width: 100%;
 
-                .homepage & {
+                .homepage &,
+                .page-404 & {
                     animation-iteration-count: infinite;
                 }
             }
