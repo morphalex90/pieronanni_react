@@ -16,7 +16,7 @@ export default function Layout(props) {
 
         setMainPadding(document.getElementsByClassName('header')[0].offsetHeight);
         setMainHeight(window.innerHeight - document.getElementsByClassName('footer')[0].offsetHeight);
-    }, []);
+    }, [mainPadding, mainHeight]);
 
     return (
         <>
