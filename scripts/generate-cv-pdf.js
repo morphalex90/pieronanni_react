@@ -27,10 +27,10 @@ const puppeteer = require('puppeteer')
             format: 'A4',
             scale: 0.67,
             margin: {
-                top: '10mm',
-                left: '10mm',
-                right: '10mm',
-                bottom: '10mm',
+                top: '12mm',
+                left: '12mm',
+                right: '12mm',
+                bottom: '12mm',
             },
         })
         await browser.close()
