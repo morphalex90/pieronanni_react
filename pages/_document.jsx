@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
     render() {
         return (
-            <Html lang='en'>
+            <Html lang="en">
                 <Head>
                     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
                     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -18,8 +18,9 @@ class MyDocument extends Document {
                     <meta name="msapplication-TileColor" content="#da532c" />
                     <meta name="theme-color" content="#000000" />
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
-                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-                    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet" />                </Head>
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+                    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+                </Head>
                 <body>
                     <noscript>You need to enable JavaScript to run this app.</noscript>
                     <a href="#main-content" className="visually-hidden" style={{ color: '#000' }}>Skip to main content</a>
