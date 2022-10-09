@@ -19,16 +19,21 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
             try {
                 await sgMail.send(msg);
             } catch (error: any) {
-                console.error(error);
-
-                if (error.response) {
-                    console.error(error.response.body)
-                }
+                // console.error(error);
+                // console.error(error.response.body)
+                return res.status(res.statusCode).json({
+                    error: {
+                        message: error
+                    }
+                });
             }
         })();
 
-        // await sendEmail({ name, email });
-        return res.status(200).end();
+        return res.status(200).json({
+            error: {
+                message: 'email sent'
+            }
+        });
     }
     return res.status(404).json({
         error: {
