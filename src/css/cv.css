@@ -1,0 +1,59 @@
+body {
+    font-family: "Fira Mono", monospace;
+    font-size: 30px;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.col-8 {
+    float: left;
+    width: 66%;
+}
+
+/* .col-7{float:left; width:58%;} */
+.col-6 {
+    float: left;
+    width: 49%;
+}
+
+/* .col-5{float:left; width:41%;} */
+.col-4 {
+    float: left;
+    width: 33%;
+}
+
+.col-3 {
+    float: left;
+    width: 24%;
+}
+
+.clear {
+    clear: both;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+ul {
+    margin-top: 0px;
+    padding-left: 15px;
+}
+
+.project-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0px;
+}
+
+.section strong {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
