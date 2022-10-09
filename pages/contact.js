@@ -57,7 +57,7 @@ export default function Contact() {
                         Contact form!
                         <form onSubmit={handlePress}>
                             <div>
-                                <label>Name<input name="name" type="text" onChange={handleChange} required /></label>
+                                <label>Name <input name="name" type="text" onChange={handleChange} required /></label>
                             </div>
 
                             <div>
