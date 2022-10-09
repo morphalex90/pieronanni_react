@@ -1,11 +1,15 @@
 const fs = require('fs')
 const puppeteer = require('puppeteer')
+const jsdom = require('jsdom')
 
     ; (async () => {
-        const HTMLcontent = fs.readFileSync('.next/server/pages/about.html', 'utf8')
-        const CSSpath = '.next/static/css/'
-        const CSSfiles = fs.readdirSync(CSSpath).filter((fn) => fn.endsWith('.css'))
-        const CSScontent = fs.readFileSync(CSSpath + CSSfiles[0], 'utf8')
+        const HTMLcontent = fs.readFileSync('.next/server/pages/cv.html', 'utf8')
+        const dom = new jsdom.JSDOM(HTMLcontent);
+        const cv = dom.window.document.querySelector('.curriculum').innerHTML;
+        // const CSSpath = '.next/static/css/'
+        // const CSSfiles = fs.readdirSync(CSSpath).filter((fn) => fn.endsWith('.css'))
+        // const CSScontent = fs.readFileSync(CSSpath + CSSfiles[0], 'utf8')
+        const CSScontent = fs.readFileSync('./src/css/cv.css', 'utf8');
 
         const browser = await puppeteer.launch({
             headless: true,
@@ -16,7 +20,7 @@ const puppeteer = require('puppeteer')
             ],
         })
         const page = await browser.newPage()
-        await page.setContent(HTMLcontent, {
+        await page.setContent(cv, {
             waitUntil: ['networkidle0'],
         })
         await page.addStyleTag({ content: CSScontent })
@@ -27,10 +31,10 @@ const puppeteer = require('puppeteer')
             format: 'A4',
             scale: 0.67,
             margin: {
-                top: '12mm',
-                left: '12mm',
-                right: '12mm',
-                bottom: '12mm',
+                top: '0mm',
+                left: '0mm',
+                right: '0mm',
+                bottom: '0mm',
             },
         })
         await browser.close()
