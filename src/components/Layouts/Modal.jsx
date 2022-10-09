@@ -11,7 +11,6 @@ const Modal = ({ show, onClose, title, content }) => {
     }, [content]);
 
     const handleCloseClick = (e) => {
-        // e.preventDefault();
         onClose();
     };
 

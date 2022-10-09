@@ -16,42 +16,8 @@
         margin: auto;
     }
 
-    // &__logo {
-    //     width: 100%;
-
-    //     @media only screen and (min-width: 992px) {
-    //         flex: 0 0 24%;
-    //         max-width: 24%;
-    //     }
-
-    //     a {
-    //         text-decoration: none;
-
-    //         &:hover {
-    //             color: blue;
-    //         }
-    //     }
-    // }
-
     &__menu {
         width: 100%;
-
-        // @media only screen and (min-width: 992px) {
-        //     flex: 0 0 49%;
-        //     max-width: 49%;
-        // }
+        margin: auto;
     }
-
-    // &__socials {
-    //     width: 100%;
-
-    //     @media only screen and (min-width: 992px) {
-    //         flex: 0 0 24%;
-    //         max-width: 24%;
-    //     }
-
-    //     ul {
-    //         justify-content: right;
-    //     }
-    // }
 }

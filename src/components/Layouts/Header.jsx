@@ -1,5 +1,3 @@
-// import { Link } from "react-router-dom";
-
 import MainMenu from '@layouts/MainMenu';
 import Socials from '@layouts/Socials';
 
