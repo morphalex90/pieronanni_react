@@ -54,7 +54,6 @@ export default function Contact() {
                     </motion.div>
 
                     <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 0.4 }}>
-                        Contact form!
                         <form onSubmit={handlePress}>
                             <div>
                                 <label>Name <input name="name" type="text" onChange={handleChange} required /></label>
