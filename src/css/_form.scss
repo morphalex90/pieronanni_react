@@ -1,0 +1,22 @@
+.form {
+    &__field {
+        margin-bottom: 15px;
+
+        label {
+            display: block;
+            margin-bottom: 2px;
+            cursor: pointer;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+
+            &:focus {
+                outline: 1px solid #ff1493;
+            }
+        }
+    }
+}
