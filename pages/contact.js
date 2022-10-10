@@ -7,22 +7,30 @@ import Layout from '@layouts/Layout';
 
 export default function Contact() {
 
-    const [state, setState] = useState({ name: '', email: '', message: '' });
-    const handleChange = event => {
-        const { name, value } = event.target;
-        setState({
-            ...state,
-            [name]: value
-        });
+    const [contact, setContact] = useState({ name: '', email: '', message: '' });
+    const [response, setResponse] = useState('');
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setContact({ ...contact, [name]: value });
     }
 
     const handlePress = (e) => {
         e.preventDefault();
+
         fetch('/api/send-email', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ name: state.name, email: state.email, message: state.message })
-        });
+            body: JSON.stringify({ name: contact.name, email: contact.email, message: contact.message })
+        })
+            .then(response => response.json())
+            .then(data => {
+                // console.log(data);
+                setResponse(data.success === true ? 'Thank you! I\'ll get back to you shortly' : 'There was an error, please try again');
+            })
+            .catch(error => {
+                console.error(error.toString());
+                setResponse('There was an error, please try again');
+            });
     }
 
     return (
@@ -54,25 +62,41 @@ export default function Contact() {
                     </motion.div>
 
                     <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 0.4 }}>
-                        <form onSubmit={handlePress}>
-                            <div>
-                                <label>Name <input name="name" type="text" onChange={handleChange} required /></label>
+                        <form className="form" onSubmit={handlePress}>
+                            <div className="d-flex">
+                                <div className="form__field">
+                                    <label htmlFor="field_name">Name</label>
+                                    <input name="name" id="field_name" type="text" onChange={handleChange} required />
+                                </div>
+
+                                <div className="form__field">
+                                    <label htmlFor="field_email">Email</label>
+                                    <input name="email" id="field_email" type="email" onChange={handleChange} required />
+                                </div>
                             </div>
 
-                            <div>
-                                <label>Email <input name="email" type="email" onChange={handleChange} required /></label>
+                            <div className="form__field">
+                                <label htmlFor="field_message">Message</label>
+                                <textarea name="message" id="field_message" onChange={handleChange} required></textarea>
                             </div>
 
-                            <div>
-                                <label>Message <textarea name="message" onChange={handleChange} required></textarea></label>
-                            </div>
+                            <div className="d-flex">
+                                <div className="form__field">
+                                    <label>
+                                        <input name="privacy" type="checkbox" onChange={handleChange} required />
+                                        <span> Privacy</span>
+                                    </label>
+                                </div>
 
-                            <button className="button">Send</button>
+                                <button className="button">Send</button>
+                            </div>
                         </form>
+
+                        <div style={{ marginTop: 20 }} >{response}</div>
                     </motion.div>
                 </div>
 
-            </Layout>
+            </Layout >
         </>
     );
 }
