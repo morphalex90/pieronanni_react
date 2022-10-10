@@ -15,30 +15,23 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
             html: message,
         };
 
-        (async () => {
-            try {
-                await sgMail.send(msg);
-            } catch (error: any) {
-                // console.error(error);
-                // console.error(error.response.body)
-                return res.status(res.statusCode).json({
-                    error: {
-                        message: error
-                    }
-                });
-            }
-        })();
-
-        return res.status(200).json({
-            error: {
-                message: 'email sent'
-            }
-        });
+        return sgMail
+            .send(msg)
+            .then((sent) => {
+                console.log(sent);
+                return res.json({ success: true });
+            })
+            .catch((err) => {
+                console.log(err);
+                return res.status(500).json({ error: err.message, success: false });
+            });
     }
+
     return res.status(404).json({
         error: {
+            success: false,
             code: 'not_found',
-            messgae: "The requested endpoint was not found or doesn't support this method."
+            message: "The requested endpoint was not found or doesn't support this method."
         }
     });
 }
