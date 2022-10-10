@@ -19,7 +19,7 @@ export default function Projects() {
         } else { // otherwise filter by tech
             // setJobs(jobs.filter(job => job.technologies.indexOf(tech) > -1));
 
-            setJobs(JobList.map(job => job.projects.filter(project => project.technologies.indexOf(tech) != -1)));
+            // setJobs(JobList.map(job => job.projects.filter(project => project.technologies.indexOf(tech) != -1)));
 
             // setJobs(JobList
             //     .map(job => job.projects.filter(project => project && project.technologies.indexOf(tech) != -1))
@@ -56,7 +56,7 @@ export default function Projects() {
                     </div>
                 }
 
-                {/* {jobs?.length > 0 &&
+                {jobs?.length > 0 &&
                     <>
                         {jobs.map(job =>
                             <div key={job.id} className="jobs">
@@ -70,7 +70,7 @@ export default function Projects() {
                             </div>
                         )}
                     </>
-                } */}
+                }
             </Layout>
         </>
     );
