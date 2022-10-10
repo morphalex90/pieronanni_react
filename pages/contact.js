@@ -30,17 +30,17 @@ export default function Contact() {
             <Head>
                 <link rel="canonical" href={process.env.NEXT_PUBLIC_APP_URL + '/contact'} />
                 <title>Contact | Piero Nanni</title>
-                <meta name="description" content="Have questions? Need help? Feel free to ask me everything you need" />
+                <meta name="description" content="Have some questions? Need help? Feel free to ask me everything you need" />
 
                 <meta property="og:type" content="profile" />
                 <meta property="og:title" content="Contact | Piero Nanni" />
-                <meta property="og:description" content="Have questions? Need help? Feel free to ask me everything you need" />
+                <meta property="og:description" content="Have some questions? Need help? Feel free to ask me everything you need" />
                 <meta property="og:image" content="" />
                 <meta property="og:url" content={process.env.NEXT_PUBLIC_APP_URL + '/contact'} />
             </Head>
 
             <Layout className="contact">
-                <h1>Contact me</h1>
+                <h1>Contact</h1>
 
                 <div className="d-flex">
                     <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.3 }}>
@@ -74,6 +74,5 @@ export default function Contact() {
 
             </Layout>
         </>
-
     );
 }
