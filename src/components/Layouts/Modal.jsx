@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import Image from 'next/image';
+import parse from 'html-react-parser';
+import DOMPurify from 'dompurify';
 
 const Modal = ({ show, onClose, title, content }) => {
     const [isBrowser, setIsBrowser] = useState(false);
 
     useEffect(() => {
-        setIsBrowser(true);
-        console.log(content);
+        if (content != null) {
+            setIsBrowser(true);
+            // console.log(content);
+        }
     }, [content]);
 
     const handleCloseClick = (e) => {
@@ -16,8 +20,7 @@ const Modal = ({ show, onClose, title, content }) => {
 
     const modalContent = show ? (
         <>
-            <div className="overlay" onClick={handleCloseClick}>
-            </div>
+            <div className="overlay" onClick={handleCloseClick}></div>
             <div className="modal">
                 <div className="modal__header">
                     <h1 className="modal__title">{title ? title : content.title}</h1>
@@ -35,11 +38,7 @@ const Modal = ({ show, onClose, title, content }) => {
                         </div>
 
                         <div>
-                            {content.description.map((line, id) => {
-                                return (
-                                    <p key={id} >{line}</p>
-                                )
-                            })}
+                            {parse(DOMPurify.sanitize(content.description, { USE_PROFILES: { html: true } }))}
                             <a href={content.url} target="_blank" rel="noreferrer">Visit site</a>
                         </div>
                     </div>
