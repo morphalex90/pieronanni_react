@@ -30,6 +30,7 @@ export default function Project(props) {
                     </div>
                 </div>
             </motion.div >
+
             <Modal onClose={() => setModalShow(false)} show={modalShow} content={modalContent} />
         </>
     );
