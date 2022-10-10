@@ -3,21 +3,31 @@ import Head from 'next/head';
 
 import Layout from '@layouts/Layout';
 import Project from '@layouts/Project';
-import { ProjectsData } from '@/components/Data/Projects';
+import { JobList } from '@/components/Data/Jobs';
 import { TechnologiesData } from '@/components/Data/Technologies';
 
 export default function Projects() {
-    const [projects, setProjects] = useState(ProjectsData);
-    const [technologies, setTechnologies] = useState(TechnologiesData);
+    const [jobs, setJobs] = useState(JobList);
+    const [technologies] = useState(TechnologiesData);
     const [activeTechnology, setActiveTechnology] = useState('*');
 
     const filterProjects = (tech) => {
         setActiveTechnology(tech); // set active tech
 
         if (tech === '*') { // if it's 'All', re load all
-            setProjects(ProjectsData);
+            setJobs(JobList);
         } else { // otherwise filter by tech
-            setProjects(ProjectsData.filter(project => project.technologies.indexOf(tech) > -1));
+            // setJobs(jobs.filter(job => job.technologies.indexOf(tech) > -1));
+
+            setJobs(JobList.map(job => job.projects.filter(project => project.technologies.indexOf(tech) != -1)));
+
+            // setJobs(JobList
+            //     .map(job => job.projects.filter(project => project && project.technologies.indexOf(tech) != -1))
+            //     .filter(job => job.length));
+
+            // setJobs(jobs.map(job => job.projects.filter(project => project.technologies.indexOf(tech) > -1)));
+
+            console.log(jobs);
         }
     }
 
@@ -40,21 +50,28 @@ export default function Projects() {
 
                 {technologies.length > 0 &&
                     <div className="technologies">
-                        {technologies.map(tech =>
-                            <div key={tech.id} className={'technologies__single' + (activeTechnology === tech.key ? ' is-active' : '')} onClick={e => filterProjects(tech.key)}>{tech.name}</div>
+                        {technologies.map((tech, id) =>
+                            <div key={id} className={'technologies__single' + (activeTechnology === tech.key ? ' is-active' : '')} onClick={e => filterProjects(tech.key)}>{tech.name}</div>
                         )}
                     </div>
                 }
 
-                {projects.length > 0 &&
-                    <div className="projects">
-                        {projects.map(project =>
-                            <Project key={project.id} project={project} delay={project.id / 12} />
+                {/* {jobs?.length > 0 &&
+                    <>
+                        {jobs.map(job =>
+                            <div key={job.id} className="jobs">
+                                <h3 className="text-center"><a href={job.company.url} target="_blank" rel="noreferrer">{job.company.name}</a></h3>
+
+                                <div className="projects">
+                                    {job.projects?.map((project, project_id) =>
+                                        <Project key={project_id} project={project} delay={(project_id + 1) / 12} />
+                                    )}
+                                </div>
+                            </div>
                         )}
-                    </div>
-                }
+                    </>
+                } */}
             </Layout>
         </>
-
     );
 }
