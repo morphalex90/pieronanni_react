@@ -26,7 +26,6 @@ export default function Projects() {
             //     .filter(job => job.length));
 
             // setJobs(jobs.map(job => job.projects.filter(project => project.technologies.indexOf(tech) > -1)));
-
             console.log(jobs);
         }
     }
