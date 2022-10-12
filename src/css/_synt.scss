@@ -5,6 +5,10 @@
     width: 100vw;
     z-index: -1;
 
+    body:not(.homepage) & {
+        filter: blur(8px);
+    }
+
     &__container {
         height: 100vh;
         display: flex;
