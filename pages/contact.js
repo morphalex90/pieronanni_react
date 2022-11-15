@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Head from 'next/head';
-
 import { motion } from 'framer-motion';
 
 import Layout from '@layouts/Layout';
@@ -9,6 +8,7 @@ export default function Contact() {
 
     const [contact, setContact] = useState({ name: '', email: '', message: '' });
     const [response, setResponse] = useState('');
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setContact({ ...contact, [name]: value });
@@ -92,7 +92,7 @@ export default function Contact() {
                             </div>
                         </form>
 
-                        <div style={{ marginTop: 20 }} >{response}</div>
+                        <div style={{ marginTop: 20 }}>{response}</div>
                     </motion.div>
                 </div>
 

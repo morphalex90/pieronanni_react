@@ -1,10 +1,8 @@
 import Head from 'next/head';
-
 import Layout from '@layouts/Layout';
-
 import { motion } from 'framer-motion';
 
-function Homepage() {
+export default function Homepage() {
     return (
         <>
             <Head>
@@ -28,11 +26,8 @@ function Homepage() {
                     <motion.h2 initial={{ x: 50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 0.2 }}>
                         Web Developer
                     </motion.h2>
-
                 </section>
             </Layout>
         </>
     );
 }
-
-export default Homepage;
