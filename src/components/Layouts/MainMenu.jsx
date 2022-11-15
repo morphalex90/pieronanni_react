@@ -7,10 +7,10 @@ function MainMenu(props) {
     return (
         <nav className={'main-menu' + (props.position ? ' --' + props.position : '')}>
             <ul>
-                <li><Link href="/"><a title="Home">Home</a></Link></li>
-                <li><Link href="/about"><a className={router.pathname === '/about' ? 'is-active' : null} title="About">About</a></Link></li>
-                <li><Link href="/projects"><a className={router.pathname === '/projects' ? 'is-active' : null} title="Projects">Projects</a></Link></li>
-                <li><Link href="/contact"><a className={router.pathname === '/contact' ? 'is-active' : null} title="Contact">Contact</a></Link></li>
+                <li><Link href="/" title="Home">Home</Link></li>
+                <li><Link href="/about" className={router.pathname === '/about' ? 'is-active' : null} title="About">About</Link></li>
+                <li><Link href="/projects" className={router.pathname === '/projects' ? 'is-active' : null} title="Projects">Projects</Link></li>
+                <li><Link href="/contact" className={router.pathname === '/contact' ? 'is-active' : null} title="Contact">Contact</Link></li>
             </ul>
         </nav>
     );
