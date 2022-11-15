@@ -100,10 +100,13 @@ main {
 }
 
 .d-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
     @media only screen and (min-width: 768px) {
-        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        gap: 15px;
 
         > * {
             flex-grow: 1;
