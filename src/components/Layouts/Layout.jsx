@@ -23,7 +23,7 @@ export default function Layout(props) {
             <Synt />
             <Header />
 
-            <main id="main-content" className={props.className} style={{ paddingTop: (mainPadding !== null ? mainPadding : ''), minHeight: (mainHeight !== null ? mainHeight : '') }}>
+            <main id="main-content" className={props.className} style={{ paddingTop: (mainPadding !== null ? mainPadding : 57), minHeight: (mainHeight !== null ? mainHeight : 'calc(100vh - 26px)') }}>
                 {props.children}
             </main>
 
