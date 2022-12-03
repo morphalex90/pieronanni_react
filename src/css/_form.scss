@@ -12,10 +12,29 @@
         input[type="email"],
         textarea {
             width: 100%;
-            padding: 5px;
+            padding: 7px 5px;
+            border-radius: 7px;
+            border: 0;
 
             &:focus {
                 outline: 1px solid #ff1493;
+            }
+
+            &::placeholder {
+                font-family: "Fira Mono", monospace;
+                color: #d4d4d4;
+            }
+            &::-moz-placeholder {
+                font-family: "Fira Mono", monospace;
+                color: #d4d4d4;
+            }
+            &:-moz-placeholder {
+                font-family: "Fira Mono", monospace;
+                color: #d4d4d4;
+            }
+            &:-ms-input-placeholder {
+                font-family: "Fira Mono", monospace;
+                color: #d4d4d4;
             }
         }
     }
