@@ -29,10 +29,10 @@ const Modal = ({ show, onClose, title, content }) => {
                 <div className="modal__content">
                     <div className="d-flex">
 
-                        <div style={{ position: 'relative' }}>
+                        <div>
                             {content.images.map((image, id) => {
                                 return (
-                                    <Image key={id} src={require('../../img/projects/' + image).default} alt={title ? title : content.title} title={title ? title : content.title} layout='fill' />
+                                    <Image key={id} src={require('../../img/projects/' + image).default} alt={title ? title : content.title} title={title ? title : content.title} />
                                 )
                             })}
                         </div>
