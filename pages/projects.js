@@ -53,7 +53,7 @@ export default function Projects() {
                         {technologies.map((tech, id) =>
                             <div key={id} className={'technologies__single' + (activeTechnology === tech.key ? ' is-active' : '')} onClick={e => filterProjects(tech.key)}>
                                 {tech.key !== '*' &&
-                                    < Image key={id} src={require('../src/img/' + tech.key + '.webp').default} alt={tech.name} height={20} width={20} />
+                                    <Image key={id} src={require('../src/img/' + tech.key + '.webp').default} alt={tech.name} height={20} width={20} />
                                 }
                                 <span>{tech.name}</span>
                             </div>
