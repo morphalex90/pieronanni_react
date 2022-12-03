@@ -8,6 +8,9 @@
     &__single {
         cursor: pointer;
         transition: all 0.4s;
+        display: flex;
+        gap: 0 5px;
+        align-items: center;
 
         &.is-active,
         &:hover {
