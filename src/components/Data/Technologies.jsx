@@ -24,15 +24,15 @@ export const TechnologiesData = [
         key: 'magento',
     },
     {
+        name: 'Laravel',
+        key: 'laravel',
+    },
+    {
         name: 'React',
         key: 'react',
     },
     {
         name: 'WordPress',
         key: 'wp',
-    },
-    {
-        name: 'Laravel',
-        key: 'laravel',
     },
 ];
