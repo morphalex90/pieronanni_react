@@ -32,7 +32,7 @@ const Modal = ({ show, onClose, title, content }) => {
                         <div style={{ position: 'relative' }}>
                             {content.images.map((image, id) => {
                                 return (
-                                    <Image key={id} src={image} alt={title ? title : content.title} title={title ? title : content.title} layout='fill' />
+                                    <Image key={id} src={require('../../img/projects/' + image).default} alt={title ? title : content.title} title={title ? title : content.title} layout='fill' />
                                 )
                             })}
                         </div>
