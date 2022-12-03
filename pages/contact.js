@@ -6,7 +6,8 @@ import Layout from '@layouts/Layout';
 
 export default function Contact() {
 
-    const [contact, setContact] = useState({ name: '', email: '', message: '' });
+    const [isLoading, setIsLoading] = useState(false);
+    const [contact, setContact] = useState({ name: '', email: '', message: '', privacy: false });
     const [response, setResponse] = useState('');
 
     const handleChange = (e) => {
@@ -16,6 +17,7 @@ export default function Contact() {
 
     const handlePress = (e) => {
         e.preventDefault();
+        setIsLoading(true);
 
         fetch('/api/send-email', {
             method: 'POST',
@@ -25,11 +27,14 @@ export default function Contact() {
             .then(response => response.json())
             .then(data => {
                 // console.log(data);
+                setContact({ name: '', email: '', message: '', privacy: false });
                 setResponse(data.success === true ? 'Thank you! I\'ll get back to you shortly' : 'There was an error, please try again');
+                setIsLoading(false);
             })
             .catch(error => {
                 console.error(error.toString());
                 setResponse('There was an error, please try again');
+                setIsLoading(false);
             });
     }
 
@@ -66,29 +71,29 @@ export default function Contact() {
                             <div className="d-flex">
                                 <div className="form__field">
                                     <label htmlFor="field_name">Name</label>
-                                    <input name="name" id="field_name" type="text" onChange={handleChange} required />
+                                    <input name="name" id="field_name" type="text" onChange={handleChange} value={contact.name} placeholder="Klayton" required />
                                 </div>
 
                                 <div className="form__field">
                                     <label htmlFor="field_email">Email</label>
-                                    <input name="email" id="field_email" type="email" onChange={handleChange} required />
+                                    <input name="email" id="field_email" type="email" onChange={handleChange} value={contact.email} placeholder="scandroid@celldweller.com" required />
                                 </div>
                             </div>
 
                             <div className="form__field">
                                 <label htmlFor="field_message">Message</label>
-                                <textarea name="message" id="field_message" onChange={handleChange} required></textarea>
+                                <textarea name="message" id="field_message" onChange={handleChange} value={contact.message} placeholder="Write me anything you want" required></textarea>
                             </div>
 
                             <div className="d-flex">
                                 <div className="form__field">
                                     <label>
-                                        <input name="privacy" type="checkbox" onChange={handleChange} required />
+                                        <input name="privacy" type="checkbox" onChange={handleChange} defaultChecked={contact.privacy} required />
                                         <span> Privacy</span>
                                     </label>
                                 </div>
 
-                                <button className="button" type="submit">Send</button>
+                                <button className="button" type="submit" disabled={isLoading}>{isLoading ? 'Sending' : 'Send'}</button>
                             </div>
                         </form>
 
