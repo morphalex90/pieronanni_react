@@ -16,9 +16,9 @@ export const JobList = [
                 title: 'Soundpickr',
                 url: 'https://www.soundpickr.com',
                 technologies: ['react', 'laravel'],
-                description: '<p>description SOundpickr first!</p>',
+                description: '<p>description Soundpickr first!</p>',
                 publish_date: '2020-04-12',
-                images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
+                images: ['soundpickr.webp']
             },
         ],
     },
@@ -39,49 +39,49 @@ export const JobList = [
                 title: 'Mathys & Squire - Scalehub Quarter',
                 url: 'https://www.mathys-squire.com/scaleup-quarter/',
                 technologies: ['wp'],
-                description: '<p>description SOundpickr first!</p>',
+                description: '<p>description Soundpickr first!</p>',
                 publish_date: '2020-04-12',
-                images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
+                images: ['mathys-squire_scaleup-quarter.png']
             },
             {
                 title: 'Elder',
                 url: 'https://www.elder.org/',
                 technologies: ['wp'],
-                description: '<p>description SOundpickr first!</p>',
+                description: '<p>description Soundpickr first!</p>',
                 publish_date: '2020-04-12',
-                images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
+                images: ['elder.png']
             },
             {
                 title: 'Mathys & Squire',
                 url: 'https://www.mathys-squire.com/',
                 technologies: ['wp'],
-                description: '<p>description SOundpickr first!</p>',
+                description: '<p>description Soundpickr first!</p>',
                 publish_date: '2020-04-12',
-                images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
+                images: ['mathys-squire.png']
             },
             {
                 title: 'AHSNNetwork',
                 url: 'https://www.ahsnnetwork.com/',
                 technologies: ['wp'],
-                description: '<p>description SOundpickr first!</p>',
+                description: '<p>description Soundpickr first!</p>',
                 publish_date: '2020-04-12',
-                images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
+                images: ['ahsnnetwork.png']
             },
             {
                 title: 'Brompton',
                 url: 'https://www.bromptontech.com/',
                 technologies: ['wp'],
-                description: '<p>description SOundpickr first!</p>',
+                description: '<p>description Soundpickr first!</p>',
                 publish_date: '2020-04-12',
-                images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
+                images: ['brompton.png']
             },
             {
                 title: 'Stephenson Harwood',
                 url: 'https://www.offshoreenergylaw.com/',
                 technologies: ['d9'],
-                description: '<p>description SOundpickr first!</p>',
+                description: '<p>description Soundpickr first!</p>',
                 publish_date: '2020-04-12',
-                images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
+                images: ['stephenson_harwood.png']
             },
         ],
     },
@@ -99,20 +99,76 @@ export const JobList = [
         end_date: null,
         projects: [
             {
-                title: 'Piero Nanni',
-                url: 'https://www.pieronanni.com',
-                technologies: ['d9'],
-                description: '<p>description SOundpickr first!</p>',
-                publish_date: '2020-04-12',
-                images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
+                title: 'Piero Nanni.me',
+                url: 'https://www.pieronanni.me',
+                technologies: ['react'],
+                description: '<p>description Soundpickr first!</p>',
+                publish_date: '2022-11-01',
+                images: ['pieronanni_me.png']
             },
             {
-                title: 'Piero Nanni',
-                url: 'https://www.pieronanni.com',
+                title: 'SEO Tools',
+                url: 'https://tools.morpheus90.com',
+                technologies: ['react', 'laravel'],
+                description: '<p>description Soundpickr first!</p>',
+                publish_date: '2020-07-02',
+                images: ['tools.png']
+            },
+            {
+                title: 'Tatis\'s Wedding',
+                url: 'https://www.tatiswedding.it/',
                 technologies: ['react'],
-                description: '<p>description SOundpickr first!</p>',
+                description: '<p>description Soundpickr first!</p>',
+                publish_date: '2020-05-13',
+                images: ['tatiswedding.png']
+            },
+            {
+                title: 'Store Animazione le Piccole Pesti',
+                url: 'https://web.archive.org/web/20210411065823/https://store.animazionelepiccolepesti.it/',
+                technologies: ['d8'],
+                description: '<p>description Soundpickr first!</p>',
+                publish_date: '2020-05-13',
+                images: ['storeanimazione-home.png']
+            },
+            {
+                title: 'Animazione le Piccole Pesti',
+                url: 'https://web.archive.org/web/20200806163843/https://www.animazionelepiccolepesti.it/',
+                technologies: ['wp'],
+                description: '<p>description Soundpickr first!</p>',
                 publish_date: '2020-04-12',
-                images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
+                images: ['animazione.png']
+            },
+            {
+                title: 'Cronometro.info',
+                url: 'https://www.tatiswedding.it/',
+                technologies: ['html5'],
+                description: '<p>description Soundpickr first!</p>',
+                publish_date: '2018-03-19',
+                images: ['cronometro.png']
+            },
+            {
+                title: 'Piero Nanni.com',
+                url: 'https://www.pieronanni.com',
+                technologies: ['d9'],
+                description: '<p>description Soundpickr first!</p>',
+                publish_date: '2018-03-02',
+                images: ['pieronanni-homepage.png', 'pieronanni-about.png', 'pieronanni-projects.png', 'pieronanni-contact.png']
+            },
+            {
+                title: 'La Buona Bottega',
+                url: 'https://www.labuonabottega.it',
+                technologies: ['d8'],
+                description: '<p>description Soundpickr first!</p>',
+                publish_date: '2017-09-01',
+                images: ['labuonabottega.png']
+            },
+            {
+                title: 'Sara Anna Nadalini',
+                url: 'https://www.saraannanadalini.com',
+                technologies: ['react'],
+                description: '<p>description Soundpickr first!</p>',
+                publish_date: '2016-03-20',
+                images: ['sara-anna-nadalini.png']
             },
         ],
     },
@@ -130,100 +186,100 @@ export const JobList = [
         end_date: '2018-06-15',
         projects: [
             {
-                title: 'EuroGruAmici',
+                title: 'EuroGru Amici',
                 url: 'http://www.eurogruamici.com/',
                 technologies: ['d8'],
-                description: '<p>description SOundpickr first!</p>',
+                description: '<p>description Soundpickr first!</p>',
                 publish_date: '2020-04-12',
-                images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
+                images: ['eurogru-amici.png']
             },
             {
                 title: 'Bed & Breakfast Farinelli',
                 url: 'https://web.archive.org/web/20160920210322/http://www.bedandbreakfast.bo.it/',
-                technologies: ['d8'],
-                description: '<p>description SOundpickr first!</p>',
+                technologies: ['d7'],
+                description: '<p>description Soundpickr first!</p>',
                 publish_date: '2020-04-12',
-                images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
+                images: ['farinelli.png']
             },
             {
                 title: 'Oleodinamica Bolognese',
                 url: 'https://web.archive.org/web/20220127143936/https://www.oleodinamicabolognese.it/',
                 technologies: ['d8'],
-                description: '<p>description SOundpickr first!</p>',
+                description: '<p>description Soundpickr first!</p>',
                 publish_date: '2020-04-12',
-                images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
+                images: ['oleodinamicabolognese.png']
             },
             {
                 title: 'Montieco',
                 url: 'http://www.montieco.it/',
                 technologies: ['d7'],
-                description: '<p>description SOundpickr first!</p>',
+                description: '<p>description Soundpickr first!</p>',
                 publish_date: '2020-04-12',
-                images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
+                images: ['montieco.png']
             },
             {
                 title: 'Edilforme',
                 url: 'https://www.edilforme.it/',
                 technologies: ['d7'],
-                description: '<p>description SOundpickr first!</p>',
+                description: '<p>description Soundpickr first!</p>',
                 publish_date: '2020-04-12',
-                images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
+                images: ['edilforme.png']
             },
             {
                 title: 'Arredart',
                 url: 'https://www.arredart.com/',
                 technologies: ['d7'],
-                description: '<p>description SOundpickr first!</p>',
+                description: '<p>description Soundpickr first!</p>',
                 publish_date: '2020-04-12',
-                images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
+                images: ['arredart.png']
             },
             {
                 title: 'I Portici Hotel',
                 url: 'https://web.archive.org/web/20190126045123/https://www.iporticihotel.com/en',
                 technologies: ['d8'],
-                description: '<p>description SOundpickr first!</p>',
+                description: '<p>description Soundpickr first!</p>',
                 publish_date: '2020-04-12',
-                images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
+                images: ['iportici.png']
             },
             {
                 title: 'Mira',
                 url: 'https://www.mira-srl.com/',
                 technologies: ['wp'],
-                description: '<p>description SOundpickr first!</p>',
+                description: '<p>description Soundpickr first!</p>',
                 publish_date: '2020-04-12',
-                images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
+                images: ['mira.png']
             },
             {
                 title: 'OkBedAndBreakfast',
                 url: 'https://web.archive.org/web/20220331015500/https://www.okbedandbreakfast.it/',
                 technologies: ['d7'],
-                description: '<p>description SOundpickr first!</p>',
+                description: '<p>description Soundpickr first!</p>',
                 publish_date: '2020-04-12',
-                images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
+                images: ['okbedandbreakfast.png']
             },
             {
                 title: 'Dott. Piero Notarrigo',
                 url: 'https://medicina-estetica-bologna.it/',
                 technologies: ['wp'],
-                description: '<p>description SOundpickr first!</p>',
+                description: '<p>description Soundpickr first!</p>',
                 publish_date: '2020-04-12',
-                images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
+                images: ['medicina-estetica.png']
             },
             {
                 title: 'Centro Carrelli',
                 url: 'https://web.archive.org/web/20190217091807/https://www.centrocarrelli.net/',
                 technologies: ['wp'],
-                description: '<p>description SOundpickr first!</p>',
+                description: '<p>description Soundpickr first!</p>',
                 publish_date: '2020-04-12',
-                images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
+                images: ['centrocarrelli.png']
             },
             {
                 title: 'Espositori Pubblicitari',
                 url: 'https://www.espositori-pubblicitari.it/',
                 technologies: ['magento'],
-                description: '<p>description SOundpickr first!</p>',
+                description: '<p>description Soundpickr first!</p>',
                 publish_date: '2020-04-12',
-                images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
+                images: ['espositori.png']
             },
         ],
     },
@@ -244,9 +300,9 @@ export const JobList = [
                 title: 'BlackRaven',
                 url: 'https://www.blackravenproduction.com/',
                 technologies: ['wp'],
-                description: '<p>description SOundpickr first!</p>',
+                description: '<p>description Soundpickr first!</p>',
                 publish_date: '2020-04-12',
-                images: ['https://www.pieronanni.com/sites/default/files/styles/project/public/projects/storeanimazione-home.png']
+                images: ['blackraven.png']
             },
         ],
     },
