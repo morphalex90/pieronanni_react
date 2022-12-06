@@ -1,5 +1,4 @@
 import MainMenu from '@layouts/MainMenu';
-import Socials from '@layouts/Socials';
 
 function Header() {
     return (
@@ -8,7 +7,6 @@ function Header() {
 
                 <div className="header__menu">
                     <MainMenu position="header" />
-                    <Socials />
                 </div>
 
             </div>

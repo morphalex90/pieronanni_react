@@ -1,15 +1,39 @@
 .main-menu {
     &.--header {
-        z-index: 2;
-        position: relative;
+        // z-index: 2;
+        // position: relative;
 
         ul {
-            z-index: 2;
+            // z-index: 2;
             justify-content: center;
             position: relative;
 
             li {
                 margin: 0 5px;
+
+                &.has-icon {
+                    margin-top: -5px;
+
+                    a {
+                        padding: 0;
+                        border: 0;
+                        display: block;
+                        line-height: 0;
+
+                        &:hover {
+                            img {
+                                transform: rotate(45deg);
+                                background-color: #fff;
+                            }
+                        }
+
+                        img {
+                            transition: all 0.4s;
+                            background-color: #ff1493;
+                            border-radius: 50%;
+                        }
+                    }
+                }
 
                 a {
                     text-decoration: none;
