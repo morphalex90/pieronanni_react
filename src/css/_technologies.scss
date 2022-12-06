@@ -2,8 +2,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px 30px;
+    gap: 7px 17px;
     margin-bottom: 30px;
+
+    @media only screen and (min-width: 768px) {
+        gap: 10px 30px;
+    }
 
     &__single {
         cursor: pointer;
@@ -15,6 +19,14 @@
         &.is-active,
         &:hover {
             color: #ff1493;
+        }
+
+        span {
+            font-size: 12px;
+
+            @media only screen and (min-width: 768px) {
+                font-size: 14px;
+            }
         }
     }
 }

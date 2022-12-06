@@ -1,10 +1,6 @@
 .main-menu {
     &.--header {
-        // z-index: 2;
-        // position: relative;
-
         ul {
-            // z-index: 2;
             justify-content: center;
             position: relative;
 
@@ -39,6 +35,11 @@
                     text-decoration: none;
                     border: 1px solid #ff1493;
                     padding: 5px 9px;
+                    font-size: 10px;
+
+                    @media only screen and (min-width: 768px) {
+                        font-size: 14px;
+                    }
 
                     &.is-active {
                         color: #ff1493;
