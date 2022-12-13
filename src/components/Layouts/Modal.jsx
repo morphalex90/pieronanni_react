@@ -15,7 +15,9 @@ const Modal = ({ show, onClose, title, content }) => {
     }, [content]);
 
     const handleCloseClick = (e) => {
-        onClose();
+        if (e.target === e.currentTarget) {
+            onClose();
+        }
     };
 
     const modalContent = show ? (
