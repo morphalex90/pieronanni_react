@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Head from 'next/head';
 import { motion } from 'framer-motion';
 
@@ -8,9 +8,7 @@ import { JobList } from '@/components/Data/Jobs';
 import Link from 'next/link';
 
 export default function About() {
-
     const [jobs, setJobs] = useState(JobList);
-    const [yearWidth, setYearWidth] = useState(0);
     const [activeJob, setActiveJob] = useState(jobs.length);
     const [startYear] = useState(2011);
     const [currentYear] = useState(new Date().getFullYear() + 1);
@@ -20,10 +18,6 @@ export default function About() {
     for (var i = startYear; i <= currentYear; i++) {
         years.push(i);
     }
-
-    useEffect(() => {
-        setYearWidth(document.querySelector('.about__jobs').clientWidth / (currentYear - startYear + 1));
-    }, []);
 
     return (
         <>
@@ -53,7 +47,7 @@ export default function About() {
 
                             {/* Jobs */}
                             <div className="timeline__jobs">
-                                {jobs.length !== 0 &&
+                                {jobs.length > 0 &&
                                     jobs.map(job => {
                                         const marginLeft = ((job.start_date.substring(0, 4) - startYear));
 
