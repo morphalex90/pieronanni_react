@@ -57,9 +57,9 @@ export default function Contact() {
 
                 <div className="d-flex">
                     <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.3 }}>
-                        <p>Thanks for wanting to get in touch! Do you have any questions? Don&#39;t esitate to contact me</p>
+                        {/* <p>Thanks for wanting to get in touch! Do you have any questions? Don&#39;t esitate to contact me</p> */}
                         <p>While you&#39;ll be waiting for an answer, treat yourself with some good music from my personal playlist</p>
-                        <p>Looking forward to hearing from you and have a wonderful {new Date().toLocaleDateString('en-GB', { weekday: 'long' })}!</p>
+                        <p>Looking forward to hearing from you and have a wonderful {new Date().toLocaleDateString('en-GB', { weekday: 'long' }).toLowerCase()}!</p>
                     </motion.div>
 
                     <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 0.2 }}>
