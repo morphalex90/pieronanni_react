@@ -1,20 +1,36 @@
 .technologies {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 7px 17px;
     margin-bottom: 30px;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 
     @media only screen and (min-width: 768px) {
         gap: 10px 30px;
+        overflow-x: unset;
+
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     &__single {
+        width: 100%;
         cursor: pointer;
         transition: all 0.4s;
         display: flex;
         gap: 0 5px;
         align-items: center;
+        flex: 0 0 15%;
+        max-width: 15%;
+
+        @media only screen and (min-width: 768px) {
+            flex: none;
+            max-width: none;
+            width: auto;
+        }
 
         &.is-active,
         &:hover {
