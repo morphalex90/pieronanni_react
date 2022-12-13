@@ -1,8 +1,7 @@
 .timeline {
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 12px;
-    // height: 100%;
-    padding: 20px;
+    padding: 12px;
 
     &__jobs {
         margin-bottom: 10px;
@@ -71,11 +70,17 @@
     }
 
     &__descriptions {
+        margin-top: 10px;
+
         div {
             display: none;
 
             &.--active {
                 display: block;
+            }
+
+            :last-child {
+                margin-bottom: 0;
             }
         }
     }
