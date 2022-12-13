@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import Layout from '@layouts/Layout';
 
 import { JobList } from '@/components/Data/Jobs';
+import Link from 'next/link';
 
 export default function About() {
 
@@ -21,8 +22,8 @@ export default function About() {
     }
 
     useEffect(() => {
-        setYearWidth(document.getElementsByClassName('about__jobs')[0].clientWidth / (currentYear - startYear + 1));
-    }, [currentYear, startYear]);
+        setYearWidth(document.querySelector('.about__jobs').clientWidth / (currentYear - startYear + 1));
+    }, []);
 
     return (
         <>
@@ -45,7 +46,7 @@ export default function About() {
                     <motion.section initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 0.1 }} className="about__jobs">
                         <p>London</p>
                         <p><a href="tel:+447724146851" title="Phone me">+44 7724146851</a></p>
-                        <p><a href="/contact-me" target="_blank" title="Contact me">piero.nanni@gmail.com</a></p>
+                        <p><Link href="/contact" title="Contact me">piero.nanni@gmail.com</Link></p>
                         <p><a href="https://github.com/morphalex90" target="_blank" rel="noreferrer" title="GitHub">github.com/morphalex90</a></p>
 
                         <div className="timeline">
@@ -54,7 +55,7 @@ export default function About() {
                             <div className="timeline__jobs">
                                 {jobs.length !== 0 &&
                                     jobs.map(job => {
-                                        const marginLeft = ((job.start_date.substring(0, 4) - startYear) * yearWidth) + 'px';
+                                        const marginLeft = ((job.start_date.substring(0, 4) - startYear));
 
                                         if (job.end_date === '' || job.end_date === null) { // no finish year
                                             var end_date = currentYear; // save the current year
@@ -62,9 +63,9 @@ export default function About() {
                                             var end_date = job.end_date.substring(0, 4);
                                         }
 
-                                        const width = (end_date - job.start_date.substring(0, 4) + 1) * yearWidth;
+                                        const width = (end_date - job.start_date.substring(0, 4) + 1);
                                         return (
-                                            <div key={job.id} className={job.id === activeJob ? ' --active' : ''} style={{ marginLeft: marginLeft, width: width }} onClick={() => { setActiveJob(job.id) }}>{job.company.name}</div>
+                                            <div key={job.id} className={job.id === activeJob ? ' --active' : ''} style={{ '--unit-margin-left': marginLeft, '--unit-width': width, '--tot-years': years.length }} onClick={() => { setActiveJob(job.id) }}>{job.company.name}</div>
                                         )
                                     })
                                 }
@@ -74,7 +75,7 @@ export default function About() {
                             <div className="timeline__years">
                                 {years.length !== 0 &&
                                     years.map((year, key) =>
-                                        <div key={key} style={{ width: yearWidth }}>{year}</div>
+                                        <div key={key}>{year}</div>
                                     )
                                 }
                             </div>
@@ -114,7 +115,7 @@ export default function About() {
                         <p>In June 2018, I moved to London to expand my knowledge and increase my English language skills.<br />
                             After a couple of months I joined <a href="https://purrgroup.com/" className="t-underline" target="_blank" rel="noreferrer" title="Visit Purr">Purr</a>, a web agency based in central London. Since starting, there have been many interesting projects and new ways of building websites that I had never previously explored.</p>
 
-                        <p>In May 2022, <a href="https://www.soundpickr.com/" className="t-underline" target="_blank" rel="noreferrer" title="Visit Soundpickr">Soundpickr</a></p>
+                        <p>In May 2022, I joined <a href="https://www.soundpickr.com/" className="t-underline" target="_blank" rel="noreferrer" title="Visit Soundpickr">Soundpickr</a> and started working with Laravel and React</p>
                     </motion.section>
                 </div>
             </Layout>
