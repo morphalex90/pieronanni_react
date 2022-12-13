@@ -19,8 +19,7 @@ const Modal = ({ show, onClose, title, content }) => {
     };
 
     const modalContent = show ? (
-        <>
-            <div className="overlay" onClick={handleCloseClick}></div>
+        <div className="overlay" onClick={handleCloseClick}>
             <div className="modal">
                 <div className="modal__header">
                     <h1 className="modal__title">{title ? title : content.title}</h1>
@@ -45,7 +44,7 @@ const Modal = ({ show, onClose, title, content }) => {
 
                 </div>
             </div>
-        </>
+        </div>
 
     ) : null;
 
