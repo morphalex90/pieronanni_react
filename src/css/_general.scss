@@ -94,9 +94,14 @@ main {
     width: 95%;
     max-width: 100%;
     margin: 0 auto;
-    padding-top: 56.5px;
+    padding-top: 61px;
     min-height: calc(100vh - 26px);
     overflow: hidden;
+
+    &.homepage {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .d-flex {

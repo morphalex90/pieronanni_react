@@ -18,7 +18,7 @@ export default function Homepage() {
             </Head>
 
             <Layout className="homepage">
-                <section className="section --centered" style={{ height: 'calc(100vh - 61px - 46px)' }}>
+                <section className="section --centered">
                     <motion.h1 initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 0.2 }}>
                         {'<PieroNanni/>'}
                     </motion.h1>
