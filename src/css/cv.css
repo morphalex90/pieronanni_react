@@ -3,10 +3,10 @@ body {
     font-size: 30px;
 }
 
-a {
+/* a {
     color: #337ab7;
     text-decoration: none;
-}
+} */
 
 .col-8 {
     float: left;
@@ -32,19 +32,6 @@ a {
 
 .clear {
     clear: both;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-right {
-    text-align: right;
-}
-
-ul {
-    margin-top: 0px;
-    padding-left: 15px;
 }
 
 .project-list {
