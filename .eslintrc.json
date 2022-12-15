@@ -1,3 +1,12 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "prefer-const": "error",
+    "space-before-blocks": "error",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off"
+  }
 }
