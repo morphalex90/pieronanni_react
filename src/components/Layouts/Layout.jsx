@@ -4,15 +4,15 @@ import Synt from '@layouts/Synt';
 import Header from '@layouts/Header';
 import Footer from '@layouts/Footer';
 
-export default function Layout(props) {
+export default function Layout({ className = '', children }) {
 
     const [mainPadding, setMainPadding] = useState(null);
     const [mainHeight, setMainHeight] = useState(null);
 
-    useEffect(() => {
+    useEffect((className) => {
         const body = document.body;
         body.removeAttribute('class');
-        body.classList.add(props.className);
+        body.classList.add(className);
 
         setMainPadding(document.getElementsByClassName('header')[0].offsetHeight);
         setMainHeight(window.innerHeight - document.getElementsByClassName('footer')[0].offsetHeight);
@@ -23,8 +23,8 @@ export default function Layout(props) {
             <Synt />
             <Header />
 
-            <main id="main-content" className={props.className} style={{ paddingTop: (mainPadding !== null ? mainPadding : 61), minHeight: (mainHeight !== null ? mainHeight : 'calc(100vh - 46px)') }}>
-                {props.children}
+            <main id="main-content" className={className} style={{ paddingTop: (mainPadding !== null ? mainPadding : 61), minHeight: (mainHeight !== null ? mainHeight : 'calc(100vh - 46px)') }}>
+                {children}
             </main>
 
             <Footer />
