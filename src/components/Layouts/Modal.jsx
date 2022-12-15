@@ -25,7 +25,7 @@ const Modal = ({ show, onClose, title, content }) => {
             <div className="modal">
                 <div className="modal__header">
                     <h1 className="modal__title">{title ? title : content.title}</h1>
-                    <button className="modal__close" onClick={handleCloseClick}>[x]</button>
+                    <button className="modal__close" type="button" onClick={handleCloseClick}>[x]</button>
                 </div>
                 <div className="modal__content">
                     <div className="d-flex">

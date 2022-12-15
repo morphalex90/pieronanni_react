@@ -1,12 +1,14 @@
 {
   "extends": [
     "next/core-web-vitals",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended"
   ],
   "rules": {
     "prefer-const": "error",
     "space-before-blocks": "error",
-    "react/react-in-jsx-scope": "off",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "react/button-has-type": "error"
   }
 }
