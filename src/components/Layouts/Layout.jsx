@@ -9,14 +9,14 @@ export default function Layout({ className = '', children }) {
     const [mainPadding, setMainPadding] = useState(null);
     const [mainHeight, setMainHeight] = useState(null);
 
-    useEffect((className) => {
+    useEffect(() => {
         const body = document.body;
         body.removeAttribute('class');
         body.classList.add(className);
 
         setMainPadding(document.getElementsByClassName('header')[0].offsetHeight);
         setMainHeight(window.innerHeight - document.getElementsByClassName('footer')[0].offsetHeight);
-    }, [mainPadding, mainHeight]);
+    }, [mainPadding, mainHeight, className]);
 
     return (
         <>
