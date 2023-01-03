@@ -102,7 +102,7 @@ export const JobList = [
                 title: 'Piero Nanni.me',
                 url: 'https://www.pieronanni.me',
                 technologies: ['react'],
-                description: '',
+                description: '<p>Description</p>',
                 publish_date: '2022-11-01',
                 images: ['pieronanni_me.png']
             },
@@ -110,7 +110,7 @@ export const JobList = [
                 title: 'SEO Tools',
                 url: 'https://tools.morpheus90.com',
                 technologies: ['react', 'laravel'],
-                description: '<p>During the develop&nbsp;of my websites I realized that I was missing a tool that would group the functions I use the most.</p><p>After digging the net looking for something useful and not founding something that pleased me, I\'ve started developing this website where I could insert all the tools I needed, in particular:</p><ul><li>check of title and alt on images</li><li>check of all the headings</li><li>check of all the meta datas</li><li>check of the file robots.txt and it\'s content</li><li>check of the sitemap existence and it\'s content</li></ul><p>After lots of tests and fixes, I\'ve finally released the first version built in pure HTML and Javascript / jQuery.</p><p>A first rebuild was made, by converting the project into a full Laravel installation&nbsp;in order to have better structure, but still I was not satisfied.</p><p>Then a second rebuild was made, this time with a combination of React in front-end (published in Netlify) and a Lumen back-end hosted into my server.<br />I\'ve choose this combination during my initial studies with React because I find that React is pretty fast and the back-end is only called by API when needed.<br />The final result is really fast compared to the previous 2 and this time I\'m quite happy with this version.</p>',
+                description: '<p>During the develop of my websites I realized that I was missing a tool that would group the functions I use the most.</p><p>After digging the net looking for something useful and not founding something that pleased me, I\'ve started developing this website where I could insert all the tools I needed, in particular:</p><ul><li>check of title and alt on images</li><li>check of all the headings</li><li>check of all the meta datas</li><li>check of the file robots.txt and it\'s content</li><li>check of the sitemap existence and it\'s content</li></ul><p>After lots of tests and fixes, I\'ve finally released the first version built in pure HTML and Javascript / jQuery.</p><p>A first rebuild was made, by converting the project into a full Laravel installation in order to have better structure, but still I was not satisfied.</p><p>Then a second rebuild was made, this time with a combination of React in front-end (published in Netlify) and a Lumen back-end hosted into my server.<br />I\'ve choose this combination during my initial studies with React because I find that React is pretty fast and the back-end is only called by API when needed.<br />The final result is really fast compared to the previous 2 and this time I\'m quite happy with this version.</p>',
                 publish_date: '2020-07-02',
                 images: ['tools.png']
             },
@@ -166,7 +166,7 @@ export const JobList = [
                 title: 'Sara Anna Nadalini',
                 url: 'https://www.saraannanadalini.com',
                 technologies: ['react'],
-                description: '<p>This is a static website based on WordPress used as a project and works collection for the content creator Sara Anna Nadalini</p><p>The theme is based on one of the basic WordPress theme, completly revisited in order to make it 100% customized with&nbsp;the owner wishes</p><p>This is one of the fastest WordPress website I\'ve ever build, thanks to the fact that there are very few contents and lots of external links</p>',
+                description: '<p>This is a static website based on WordPress used as a project and works collection for the content creator Sara Anna Nadalini</p><p>The theme is based on one of the basic WordPress theme, completly revisited in order to make it 100% customized with the owner wishes</p><p>This is one of the fastest WordPress website I\'ve ever build, thanks to the fact that there are very few contents and lots of external links</p>',
                 publish_date: '2016-03-20',
                 images: ['sara-anna-nadalini.png']
             },
