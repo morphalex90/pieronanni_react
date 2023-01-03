@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
@@ -8,9 +8,15 @@ import { JobList } from '@/components/Data/Jobs';
 import { TechnologiesData } from '@/components/Data/Technologies';
 
 export default function Projects() {
-    const [jobs, setJobs] = useState(JobList);
-    const [technologies] = useState(TechnologiesData);
-    const [activeTechnology, setActiveTechnology] = useState('*');
+    const [jobs, setJobs] = useState([]);
+    const [technologies, setTechnologies] = useState([]);
+    const [activeTechnology, setActiveTechnology] = useState(null);
+
+    useEffect(() => {
+        setJobs(JobList);
+        setTechnologies(TechnologiesData);
+        setActiveTechnology('*');
+    }, []);
 
     const filterProjects = (tech) => {
         setActiveTechnology(tech); // set active tech
@@ -18,16 +24,14 @@ export default function Projects() {
         if (tech === '*') { // if it's 'All', re load all
             setJobs(JobList);
         } else { // otherwise filter by tech
-            // setJobs(jobs.filter(job => job.technologies.indexOf(tech) > -1));
-
-            // setJobs(JobList.map(job => job.projects.filter(project => project.technologies.indexOf(tech) != -1)));
-
-            // setJobs(JobList
-            //     .map(job => job.projects.filter(project => project && project.technologies.indexOf(tech) != -1))
-            //     .filter(job => job.length));
-
-            // setJobs(jobs.map(job => job.projects.filter(project => project.technologies.indexOf(tech) > -1)));
-            console.log(jobs);
+            setJobs(prevState => {
+                const newState = JobList.map(obj => {
+                    const tmp = obj.projects.filter(project => project.technologies.indexOf(tech) !== -1)
+                    console.log(tmp);
+                    return { ...obj, projects: tmp };
+                });
+                return newState;
+            });
         }
     }
 
