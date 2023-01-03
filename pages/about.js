@@ -11,7 +11,7 @@ export default function About() {
     const [jobs, setJobs] = useState(JobList);
     const [activeJob, setActiveJob] = useState(jobs.length);
     const [startYear] = useState(2011);
-    const [currentYear] = useState(new Date().getFullYear() + 1);
+    const [currentYear] = useState(new Date().getFullYear());
 
     // Years timeline
     const years = [];
