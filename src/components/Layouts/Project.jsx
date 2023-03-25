@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 export default function Project(props) {
-
     const [project] = useState(props.project);
     const [delay] = useState(props.delay);
 
