@@ -1,9 +1,9 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import sgMail from '@sendgrid/mail';
+import sendgrid from '@sendgrid/mail';
 
 const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
     if (req.method === 'POST') {
-        sgMail.setApiKey(process.env.SENDGRID_API_KEY || '');
+        sendgrid.setApiKey(process.env.SENDGRID_API_KEY || '');
         const { name, email, message } = req.body;
 
         const msg = {
@@ -15,7 +15,7 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
             html: message,
         };
 
-        return sgMail
+        return sendgrid
             .send(msg)
             .then((sent) => {
                 // console.log(sent);
