@@ -10,7 +10,7 @@ export default function ShowSongs() {
         getPlaylist('c69ad6af-b330-4cfb-b81b-c690c2e00ddf');
     }, []);
 
-    useEffect(() => {
+    useEffect(() => { // when the song changes, re initialize the player
         if (audioRef.current) {
             audioRef.current.pause();
             audioRef.current.load();
@@ -67,18 +67,27 @@ export default function ShowSongs() {
             {songs.length !== 0 &&
                 <div className="player">
                     <div className="player__top">
-                        <div><Image src={songs[selectedSong].image_url} alt={songs[selectedSong].name} height={100} width={100} /></div>
-                        <audio controls controlsList="nodownload noplaybackrate nodownload" preload="metadata" ref={audioRef}>
-                            <source src={songs[selectedSong].song_url} type="audio/mpeg" />
-                            Your browser does not support the audio element.
-                        </audio>
+                        <Image src={songs[selectedSong].image_url} alt={songs[selectedSong].name} height={100} width={100} />
+                        <br />
+                        <br />
+
+                        <div className="player__top__controls">
+                            <div className="player__top__controls__prev" onClick={() => setSelectedSong(selectedSong === 0 ? selectedSong : (selectedSong - 1))}>&lt;</div>
+
+                            <audio controls controlsList="nodownload noplaybackrate nodownload" preload="metadata" ref={audioRef}>
+                                <source src={songs[selectedSong].song_url} type="audio/mpeg" />
+                                Your browser does not support the audio element.
+                            </audio>
+
+                            <div className="player__top__controls__next" onClick={() => setSelectedSong(selectedSong === (songs.length - 1) ? 0 : (selectedSong + 1))}>&gt;</div>
+                        </div>
 
                     </div>
                     <div className="player__list">
                         {songs.length !== 0 &&
                             songs.map((song, id) => {
                                 return (
-                                    <div key={id} className="player__list__song" onClick={() => setSelectedSong(id)}>
+                                    <div key={id} className={'player__list__song' + (selectedSong === id ? ' --selected' : '')} onClick={() => setSelectedSong(id)}>
                                         <div className="player__list__song__name">{song.name}</div>
                                         <div className="player__list__song__artist">{song.artist?.name}</div>
                                     </div>
