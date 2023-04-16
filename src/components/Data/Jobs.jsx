@@ -99,6 +99,13 @@ export const JobList = [
         end_date: null,
         projects: [
             {
+                title: 'OnlyCats',
+                url: 'https://onlycats.icu',
+                technologies: ['react'],
+                description: '<p>It uses the https://thecatapi.com API</p>',
+                publish_date: '2023-04-16',
+                images: ['onlycats.png']
+            }, {
                 title: 'Piero Nanni.me',
                 url: 'https://www.pieronanni.me',
                 technologies: ['react'],
