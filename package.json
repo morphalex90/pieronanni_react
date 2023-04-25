@@ -10,17 +10,17 @@
   },
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
-    "@types/node": "18.15.11",
-    "@types/react": "18.0.35",
-    "@types/react-dom": "^18.0.11",
+    "@types/node": "18.16.0",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "^18.2.0",
     "dompurify": "^3.0.2",
-    "eslint": "^8.38.0",
-    "eslint-config-next": "^13.3.0",
-    "framer-motion": "^10.12.2",
-    "html-react-parser": "^3.0.15",
+    "eslint": "^8.39.0",
+    "eslint-config-next": "^13.3.1",
+    "framer-motion": "^10.12.4",
+    "html-react-parser": "^3.0.16",
     "jsdom": "^21.1.1",
-    "next": "^13.3.0",
-    "puppeteer": "^19.9.0",
+    "next": "^13.3.1",
+    "puppeteer": "^19.11.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.62.0",
@@ -28,6 +28,8 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-react": "^7.32.2"
   }
 }
