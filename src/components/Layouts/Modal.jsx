@@ -4,7 +4,7 @@ import Image from 'next/image';
 import parse from 'html-react-parser';
 import DOMPurify from 'dompurify';
 
-const Modal = ({ show, onClose, title, content }) => {
+function Modal({ show, onClose, title, content }) {
     const [isBrowser, setIsBrowser] = useState(false);
 
     useEffect(() => {

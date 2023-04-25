@@ -1,6 +1,6 @@
 import { useEffect, useState, useContext } from 'react';
-import { GlobalContext } from '../Context/GlobalContext';
 import Image from 'next/image';
+import { GlobalContext } from '../Context/GlobalContext';
 
 import '../../css/_popup.scss';
 
@@ -41,6 +41,7 @@ export default function Popup() {
                                 <a className="button" href={popup.url} target="_blank" rel="noreferrer">View website</a>
                             </div>
                         </div>
+                        {/* add technologies */}
 
                     </div>
                 </div>
