@@ -77,19 +77,15 @@ export default function About() {
                             {/* Descriptions */}
                             <div className="timeline__descriptions">
                                 {jobs.length !== 0 &&
-                                    jobs.map(job => {
-                                        return (
-                                            <div key={job.id} className={job.id === activeJob ? ' --active' : ''}>
-                                                <ul>
-                                                    {job.description.map((description, id) => {
-                                                        return (
-                                                            <li key={id}>{description}</li>
-                                                        )
-                                                    })}
-                                                </ul>
-                                            </div>
-                                        )
-                                    })
+                                    jobs.map(job =>
+                                        <div key={job.id} className={job.id === activeJob ? ' --active' : ''}>
+                                            <ul>
+                                                {job.description.map((description, id) =>
+                                                    <li key={id}>{description}</li>
+                                                )}
+                                            </ul>
+                                        </div>
+                                    )
                                 }
                             </div>
                         </div>
