@@ -31,16 +31,14 @@ function Modal({ show, onClose, title, content }) {
                     <div className="d-flex">
 
                         <div>
-                            {content.images.map((image, id) => {
-                                return (
-                                    <Image key={id} src={require('../../img/projects/' + image).default} alt={title ? title : content.title} title={title ? title : content.title} />
-                                )
-                            })}
+                            {content.images.map((image, id) =>
+                                <Image key={id} src={require('../../img/projects/' + image).default} alt={title ? title : content.title} title={title ? title : content.title} />
+                            )}
                         </div>
 
                         <div>
                             {parse(DOMPurify.sanitize(content.description, { USE_PROFILES: { html: true } }))}
-                            <a href={content.url} target="_blank" rel="noreferrer">Visit site</a>
+                            <a href={content.url} className="button" target="_blank" rel="noreferrer">Visit site</a>
                         </div>
                     </div>
 
