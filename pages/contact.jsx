@@ -25,7 +25,7 @@ export default function Contact() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ name: contact.name, email: contact.email, message: contact.message })
         })
-            .then(response => response.json())
+            .then(back => back.json())
             .then(data => {
                 // console.log(data);
                 setContact({ name: '', email: '', message: '', privacy: false });
@@ -33,7 +33,7 @@ export default function Contact() {
                 setIsLoading(false);
             })
             .catch(error => {
-                console.error(error.toString());
+                // console.error(error.toString());
                 setResponse('There was an error, please try again');
                 setIsLoading(false);
             });
@@ -89,8 +89,8 @@ export default function Contact() {
 
                             <div className="d-flex">
                                 <div className="form__field">
-                                    <label>
-                                        <input name="privacy" type="checkbox" onChange={handleChange} defaultChecked={contact.privacy} required />
+                                    <label htmlFor="privacy">
+                                        <input name="privacy" id="privacy" type="checkbox" onChange={handleChange} defaultChecked={contact.privacy} required />
                                         <span> Privacy</span>
                                     </label>
                                 </div>
