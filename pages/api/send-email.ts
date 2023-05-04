@@ -22,7 +22,7 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
                 return res.json({ success: true });
             })
             .catch((err) => {
-                console.log(err);
+                // console.log(err);
                 return res.status(500).json({ error: err.message, success: false });
             });
     }
