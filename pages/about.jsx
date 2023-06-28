@@ -39,7 +39,7 @@ export default function About() {
                 <div className="d-flex">
                     <motion.section initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 0.1 }} className="about__jobs">
                         <p>London</p>
-                        <p><a href="tel:+447724146851" title="Phone me">+44 7724146851</a></p>
+                        {/* <p><a href="tel:+447724146851" title="Phone me">+44 7724146851</a></p> */}
                         <p><Link href="/contact" title="Contact me">piero.nanni@gmail.com</Link></p>
                         <p><a href="https://github.com/morphalex90" target="_blank" rel="noreferrer" title="GitHub">github.com/morphalex90</a></p>
 

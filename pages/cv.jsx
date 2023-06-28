@@ -22,7 +22,7 @@ export default function Cv() {
             <div className="col-6 text-right">
                 <div style={{ marginLeft: 20, marginRight: 20, paddingTop: 10 }}>
                     <div>London, UK</div>
-                    <div>+44 7724 146851</div>
+                    {/* <div>+44 7724 146851</div> */}
                     <div><a href="https://www.pieronanni.com">www.pieronanni.com</a></div>
                     <div><a href="mailto:piero.nanni@gmail.com">piero.nanni@gmail.com</a></div>
                     <div><a href="https://github.com/morphalex90">github.com/morphalex90</a></div>
