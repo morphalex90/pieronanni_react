@@ -97,7 +97,7 @@ export default function About() {
                         <p>During high school I discovered the programming world. I started with basic HTML, then continued expanding my information in technology experience through the years. During these years I learned to create entire websites not only for myself, but for others.</p>
 
                         <p>From 2011 to 2015, I was part of an indie team based in Bologna, Italy (<a href="https://www.blackravenproduction.com/" className="t-underline" target="_blank" rel="noreferrer" title="Visit Black Raven">Black Raven</a>). We developed small games and programs for iOS and PC. I was responsible for the design and development of the website and methods of database connection of the apps. As a secondary role, I also worked as a 3D modeler.<br />
-                            The years spent as part of this team enhanced my programming skills and developed the dynamics working with a team. Thanks to this experience,  I have become the programmer I am today.</p>
+                            The years spent as part of this team enhanced my programming skills and developed the dynamics of working with a team. Thanks to this experience, I have become the programmer I am today.</p>
 
                         <p>In May 2015, I was offered the opportunity to work at a web agency (<a href="https://www.magicnet.it/" className="t-underline" target="_blank" rel="noreferrer" title="Visit Magic">Magic</a>), where I was trained on how companies develop websites and e-commerce platforms. During my three years with the company, I expanded my knowledge of WordPress, Drupal, and Magento.</p>
 
