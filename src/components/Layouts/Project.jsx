@@ -1,13 +1,9 @@
 import { useState } from 'react';
 import Modal from '@layouts/Modal';
-
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-export default function Project(props) {
-    const [project] = useState(props.project);
-    const [delay] = useState(props.delay);
-
+export default function Project({ project, delay }) {
     const [modalShow, setModalShow] = useState(false);
     const [modalContent, setModalContent] = useState(null);
 

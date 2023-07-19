@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { motion } from 'framer-motion';
-
 import Layout from '@layouts/Layout';
 import MainMenu from '@layouts/MainMenu';
 
@@ -19,19 +18,15 @@ export default function Page404() {
                 <meta property="og:url" content={process.env.NEXT_PUBLIC_APP_URL + (typeof window !== 'undefined' ? window.location.pathname : '')} />
 
                 <meta name="robots" content="noindex, nofollow" />
-
             </Head>
 
             <Layout className="page-404">
-
                 <motion.section initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 0.2 }} className="section --centered" style={{ height: 'calc(100vh - 56px - 26px)' }}>
                     <h1>404 - Page not Found</h1>
                     <h2>Try again, you might get lucky</h2>
                     <MainMenu />
                 </motion.section>
-
             </Layout>
         </>
-
     );
 }

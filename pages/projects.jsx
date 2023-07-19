@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-
 import Layout from '@layouts/Layout';
 import Project from '@layouts/Project';
 import { JobList } from '@/components/Data/Jobs';
@@ -27,7 +26,7 @@ export default function Projects() {
             setJobs(prevState => {
                 const newState = JobList.map(obj => {
                     const tmp = obj.projects.filter(project => project.technologies.indexOf(tech) !== -1)
-                    console.log(tmp);
+                    // console.log(tmp);
                     return { ...obj, projects: tmp };
                 });
                 return newState;
@@ -72,8 +71,8 @@ export default function Projects() {
                                 <h3 className="text-center"><a href={job.company.url} target="_blank" rel="noreferrer">{job.company.name}</a></h3>
 
                                 <div className="projects">
-                                    {job.projects?.map((project, project_id) =>
-                                        <Project key={project_id} project={project} delay={(project_id + 1) / 12} />
+                                    {job.projects?.map((project, projectId) =>
+                                        <Project key={projectId} project={project} delay={(projectId + 1) / 12} />
                                     )}
                                 </div>
                             </div>

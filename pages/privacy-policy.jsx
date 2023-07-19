@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { motion } from 'framer-motion';
-
 import Layout from '@layouts/Layout';
 
 export default function PrivacyPolicy() {
@@ -48,9 +47,7 @@ export default function PrivacyPolicy() {
                         <li><a href="https://support.apple.com/kb/PH5042" target="_blank" title="safari" rel="noreferrer">Safari</a></li>
                     </ul>
                 </motion.div>
-
             </Layout>
         </>
-
     );
 }

@@ -1,6 +1,6 @@
 function Synt() {
 
-    const first_step = 8;
+    const firstStep = 8;
 
     const horizontalLines = [];
     for (var i = 4; i >= 0.5; (i = i - 0.5)) {
@@ -10,7 +10,7 @@ function Synt() {
     function translateAmount(n) {
         let total = 0;
         for (let i = 1; i <= n; i++) {
-            total = total + (first_step * (0.975 ** n))
+            total = total + (firstStep * (0.975 ** n))
         }
         return total * 8;
     }
@@ -51,7 +51,6 @@ function Synt() {
 
                 </div>
             </div>
-
         </div>
     );
 }
