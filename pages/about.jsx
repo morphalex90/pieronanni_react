@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import Head from 'next/head';
 import { motion } from 'framer-motion';
-
 import Layout from '@layouts/Layout';
-
 import { JobList } from '@/components/Data/Jobs';
 import Link from 'next/link';
 
@@ -50,14 +48,15 @@ export default function About() {
                                 {jobs.length > 0 &&
                                     jobs.map(job => {
                                         const marginLeft = ((job.start_date.substring(0, 4) - startYear));
+                                        let endDate = null;
 
                                         if (job.end_date === '' || job.end_date === null) { // no finish year
-                                            var end_date = currentYear; // save the current year
+                                            endDate = currentYear; // save the current year
                                         } else {
-                                            var end_date = job.end_date.substring(0, 4);
+                                            endDate = job.end_date.substring(0, 4);
                                         }
 
-                                        const width = (end_date - job.start_date.substring(0, 4) + 1);
+                                        const width = (endDate - job.start_date.substring(0, 4) + 1);
                                         return (
                                             <div key={job.id} className={job.id === activeJob ? ' --active' : ''} style={{ '--unit-margin-left': marginLeft, '--unit-width': width, '--tot-years': years.length }} onClick={() => { setActiveJob(job.id) }}>{job.company.name}</div>
                                         )
@@ -95,17 +94,17 @@ export default function About() {
                     <motion.section initial={{ x: 50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.3, delay: 0.3 }}>
                         <p>When I think on my early years, I have always been passionate about technology and curious about how things work.</p>
 
-                        <p>During high school I discovered the programming world. I started with basic HTML, then continued expanding my information technology experience through the years. During these years I learned to create complete websites, for myself and others.</p>
+                        <p>During high school I discovered the programming world. I started with basic HTML, then continued expanding my information in technology experience through the years. During these years I learned to create entire websites not only for myself, but for others.</p>
 
                         <p>From 2011 to 2015, I was part of an indie team based in Bologna, Italy (<a href="https://www.blackravenproduction.com/" className="t-underline" target="_blank" rel="noreferrer" title="Visit Black Raven">Black Raven</a>). We developed small games and programs for iOS and PC. I was responsible for the design and development of the website and methods of database connection of the apps. As a secondary role, I also worked as a 3D modeler.<br />
-                            The years spent as part of this team enhanced my programming skills and developed the dynamics of working as part of a team. Thanks to this experience,  I have become the programmer I am today.</p>
+                            The years spent as part of this team enhanced my programming skills and developed the dynamics working with a team. Thanks to this experience,  I have become the programmer I am today.</p>
 
                         <p>In May 2015, I was offered the opportunity to work at a web agency (<a href="https://www.magicnet.it/" className="t-underline" target="_blank" rel="noreferrer" title="Visit Magic">Magic</a>), where I was trained on how companies develop websites and e-commerce platforms. During my three years with the company, I expanded my knowledge of WordPress, Drupal, and Magento.</p>
 
                         <p>In June 2018, I moved to London to expand my knowledge and increase my English language skills.<br />
                             After a couple of months I joined <a href="https://purrgroup.com/" className="t-underline" target="_blank" rel="noreferrer" title="Visit Purr">Purr</a>, a web agency based in central London. Since starting, there have been many interesting projects and new ways of building websites that I had never previously explored.</p>
 
-                        <p>In May 2022, I joined <a href="https://www.soundpickr.com/" className="t-underline" target="_blank" rel="noreferrer" title="Visit Soundpickr">Soundpickr</a> and started working with Laravel and React</p>
+                        <p>In May 2022, I joined <a href="https://www.soundpickr.com/" className="t-underline" target="_blank" rel="noreferrer" title="Visit Soundpickr">Soundpickr</a> and started working with Laravel and React.</p>
                     </motion.section>
                 </div>
             </Layout>
