@@ -99,6 +99,13 @@ export const JobList = [
         end_date: null,
         projects: [
             {
+                title: 'OnlyDogs',
+                url: 'https://onlydogs.icu',
+                technologies: ['react'],
+                description: '<p>It uses the https://thedogapi.com API</p>',
+                publish_date: '2023-07-16',
+                images: ['onlydogs.png']
+            }, {
                 title: 'OnlyCats',
                 url: 'https://onlycats.icu',
                 technologies: ['react'],
@@ -109,7 +116,7 @@ export const JobList = [
                 title: 'Piero Nanni.me',
                 url: 'https://www.pieronanni.me',
                 technologies: ['react'],
-                description: '<p>Description</p>',
+                description: '<p>My personal website, React based</p>',
                 publish_date: '2022-11-01',
                 images: ['pieronanni_me.png']
             },
