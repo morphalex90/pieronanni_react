@@ -5,9 +5,7 @@ import Header from '@layouts/Header';
 import Footer from '@layouts/Footer';
 
 export default function Layout({ className = '', children }) {
-
     const [mainPadding, setMainPadding] = useState(null);
-    const [mainHeight, setMainHeight] = useState(null);
 
     useEffect(() => {
         const body = document.body;
@@ -15,18 +13,17 @@ export default function Layout({ className = '', children }) {
         body.classList.add(className);
 
         setMainPadding(document.getElementsByClassName('header')[0].offsetHeight);
-        setMainHeight(window.innerHeight - document.getElementsByClassName('footer')[0].offsetHeight);
-    }, [mainPadding, mainHeight, className]);
+    }, [mainPadding, className]);
 
     return (
         <>
             <Synt />
             <Header />
-
-            <main id="main-content" className={className} style={{ paddingTop: (mainPadding !== null ? mainPadding : 61), minHeight: (mainHeight !== null ? mainHeight : 'calc(100vh - 46px)') }}>
-                {children}
-            </main>
-
+            <div className="content-wrapper" style={{ paddingTop: (mainPadding !== null ? mainPadding : 61) }}>
+                <main id="main-content">
+                    {children}
+                </main>
+            </div>
             <Footer />
         </>
     );

@@ -16,12 +16,17 @@
 
 body {
     margin: 0;
-    // font-family: "Fira Mono", monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #000;
     font-size: 14px;
     color: #fff;
+}
+
+#__next {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .visually-hidden {
@@ -91,13 +96,28 @@ main {
     width: 95%;
     max-width: 100%;
     margin: 0 auto;
-    padding-top: 61px;
-    min-height: calc(100vh - 46px);
+    // padding-top: 61px;
+    // min-height: calc(100vh - 46px);
     overflow: hidden;
 
-    &.homepage {
+    .homepage & {
         display: flex;
         justify-content: center;
+    }
+}
+
+.content-wrapper {
+    padding-top: 55px;
+
+    .homepage & {
+        display: flex;
+    }
+
+    @media only screen and (min-width: 768px) {
+        flex: 1 1;
+        // display: flex;
+        // min-height: 602px;
+        padding-top: 61px;
     }
 }
 
