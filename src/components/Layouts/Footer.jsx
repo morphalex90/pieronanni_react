@@ -9,7 +9,7 @@ function Footer() {
                 </div>
 
                 <div className="footer__copy">
-                    <p>{new Date().getFullYear()} &copy; Piero Nanni. Made with &hearts; in London</p>
+                    <p>{new Date().getFullYear()} &copy; Piero Nanni. Made with 🍺 in London</p>
                 </div>
             </div>
         </footer>
