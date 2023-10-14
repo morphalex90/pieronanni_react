@@ -1,6 +1,6 @@
 import MainMenu from '@layouts/MainMenu';
 
-function Header() {
+export default function Header() {
     return (
         <header className="header">
             <div className="header__container">
@@ -13,5 +13,3 @@ function Header() {
         </header>
     );
 }
-
-export default Header;

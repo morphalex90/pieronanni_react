@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import Image from 'next/image';
 import parse from 'html-react-parser';
 import DOMPurify from 'dompurify';
 
-function Modal({ show, onClose, title, content }) {
+export default function Modal({ show, onClose, title, content }) {
     const [isBrowser, setIsBrowser] = useState(false);
 
     useEffect(() => {
@@ -32,7 +32,7 @@ function Modal({ show, onClose, title, content }) {
 
                         <div>
                             {content.images.map((image, id) =>
-                                <Image key={id} src={require('../../img/projects/' + image).default} alt={title ? title : content.title} title={title ? title : content.title} />
+                                <Image key={id} src={require('../img/projects/' + image).default} alt={title ? title : content.title} title={title ? title : content.title} />
                             )}
                         </div>
 
@@ -57,5 +57,3 @@ function Modal({ show, onClose, title, content }) {
         return null;
     }
 };
-
-export default Modal;

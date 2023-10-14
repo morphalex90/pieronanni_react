@@ -4,9 +4,8 @@ import Image from "next/image";
 import github from '@img/github.svg';
 import linkedin from '@img/linkedin.png';
 
-function MainMenu(props) {
+export default function MainMenu({ position }) {
     const router = useRouter();
-    const { position } = props;
 
     return (
         <nav className={'main-menu' + (position ? ' --' + position : '')}>
@@ -26,5 +25,3 @@ function MainMenu(props) {
         </nav>
     );
 }
-
-export default MainMenu;

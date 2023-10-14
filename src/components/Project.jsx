@@ -11,7 +11,7 @@ export default function Project({ project, delay }) {
         <>
             <motion.div className="projects__single" initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.3, delay }} onClick={e => { setModalShow(true); setModalContent(project); }}>
                 <div className="projects__single__image">
-                    <Image src={require('../../img/projects/' + project.images[0])} alt={project.title} title={project.title} width={333} height={200} />
+                    <Image src={require('../img/projects/' + project.images[0])} alt={project.title} title={project.title} width={333} height={200} />
                 </div>
 
                 <div className="projects__single__content">
@@ -19,7 +19,7 @@ export default function Project({ project, delay }) {
                     <div className="projects__single__tech">
                         {project.technologies.map((tech, id) => {
                             return (
-                                <Image key={id} src={require('../../img/' + tech + '.webp').default} alt={tech} title={tech} height={20} width={20} />
+                                <Image key={id} src={require('../img/' + tech + '.webp').default} alt={tech} title={tech} height={20} width={20} />
                             )
                         })}
                     </div>
