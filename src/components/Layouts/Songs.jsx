@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-// import Image from 'next/image';
+import Image from 'next/image';
 
 export default function ShowSongs() {
     const [songs, setSongs] = useState([]);
@@ -40,11 +40,11 @@ export default function ShowSongs() {
     //         });
     // }
 
-    const getPlaylist = (playlist_key) => {
-        fetch('https://api.soundpickr.com/api/v1/metaplayer/playlist/' + playlist_key, {
+    const getPlaylist = (playlistKey) => {
+        fetch('https://api.soundpickr.com/api/v1/metaplayer/playlist/' + playlistKey, {
             method: 'GET',
             headers: {
-                'X-API-KEY': process.env.NEXT_PUBLIC_SP_API_KEY,
+                'x-api-key': process.env.NEXT_PUBLIC_SP_API_KEY,
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
@@ -54,7 +54,7 @@ export default function ShowSongs() {
                 data.songs.map(song => {
                     // console.log(song);
                     // setSongs([...songs, { image_url: song.image_url, song_url: song.song_url }])
-                    setSongs(prevState => [{ name: song.name, artist: song.song_artist, image_url: song.image_url, song_url: song.song_url + '?api_key=' + process.env.NEXT_PUBLIC_SP_API_KEY }, ...prevState]);
+                    setSongs(prevState => [{ name: song.name, artist: song.artist?.name, image_url: song.image_url, song_url: song.song_url + '?api_key=' + process.env.NEXT_PUBLIC_SP_API_KEY }, ...prevState]);
                 });
             })
             .catch(error => {
@@ -62,12 +62,14 @@ export default function ShowSongs() {
             });
     }
 
-    return (
+    if (songs.length === 0) {
+        return (<></>);
+    }
 
-        songs.length !== 0 &&
+    return (
         <div className="player">
             <div className="player__top">
-                <img src={songs[selectedSong].image_url} alt={songs[selectedSong].name} height={100} width={100} />
+                <Image src={songs[selectedSong].image_url} alt={songs[selectedSong].name} height={100} width={100} unoptimized />
                 <br />
                 <br />
 
