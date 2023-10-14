@@ -73,12 +73,12 @@ export default function Contact() {
                             <div className="d-flex">
                                 <div className="form__field">
                                     <label htmlFor="field_name">Name</label>
-                                    <input name="name" id="field_name" type="text" onChange={handleChange} value={contact.name} placeholder="Klayton" required />
+                                    <input name="name" id="field_name" type="text" onChange={handleChange} value={contact.name} placeholder="John Doe" required />
                                 </div>
 
                                 <div className="form__field">
                                     <label htmlFor="field_email">Email</label>
-                                    <input name="email" id="field_email" type="email" onChange={handleChange} value={contact.email} placeholder="scandroid@celldweller.com" required />
+                                    <input name="email" id="field_email" type="email" onChange={handleChange} value={contact.email} placeholder="john@doe.com" required />
                                 </div>
                             </div>
 
