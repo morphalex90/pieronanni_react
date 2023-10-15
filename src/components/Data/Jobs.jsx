@@ -16,7 +16,7 @@ export const JobList = [
                 title: 'Soundpickr',
                 url: 'https://www.soundpickr.com',
                 technologies: ['react', 'laravel'],
-                description: '<p>description Soundpickr to do!</p>',
+                description: '<p>Soundpickr has started as a small project for a friend, it then escalated to become a full scale big project where I was hired as the CTO</p><p>My knoledge of Laravel and React espanded quite significally thanks to this project</p><p>We structured it to have the main API in Laravel, that acts as the center of all, that is connected to all front-ends</p>',
                 publish_date: '2020-04-12',
                 images: ['soundpickr.webp']
             },
@@ -39,7 +39,7 @@ export const JobList = [
                 title: 'Mathys & Squire - Scalehub Quarter',
                 url: 'https://www.mathys-squire.com/scaleup-quarter/',
                 technologies: ['wp'],
-                description: '',
+                description: '<p>The m&s Scalehub Quarter project was created by converting the main m&s WordPress website to be a multisite, as it would give more flexibility to the people that were already working on it</p><p>The designs has been entirely created by one of the m&s worker and it\s significally different and more modern compared to the main site. That means that all the blocks were created brand new and nothing from the main site was used</p><p>With time, a lot of the new blocks has been exported from the new site to the main site, as they wanted to have a new designs in some pages</p>',
                 publish_date: '2020-04-12',
                 images: ['mathys-squire_scaleup-quarter.png', 'mathys-squire_scaleup-quarter_strateby_investments.png']
             },
@@ -47,7 +47,7 @@ export const JobList = [
                 title: 'Elder',
                 url: 'https://www.elder.org/',
                 technologies: ['wp'],
-                description: '',
+                description: '<p>Elder was previously hosted in an online CMS, so the first thing we has to do was the convert all pages from their structure to the new structure, in order to keep all the content</p><p>It took significally time but we were able to convert all with the new gutenberg custom block structure</p>',
                 publish_date: '2020-04-12',
                 images: ['elder.png', 'elder-live-in-care.png']
             },
@@ -55,7 +55,7 @@ export const JobList = [
                 title: 'Mathys & Squire',
                 url: 'https://www.mathys-squire.com/',
                 technologies: ['wp'],
-                description: '',
+                description: '<p>Mathys & Square was previously created in an old and very different cms, they wanted to keep the old design and have a full rebuild in WordPress</p>',
                 publish_date: '2020-04-12',
                 images: ['mathys-squire.png', 'mathys-people.png', 'mathys-sectors.png']
             },
@@ -63,7 +63,7 @@ export const JobList = [
                 title: 'AHSNNetwork',
                 url: 'https://www.ahsnnetwork.com/',
                 technologies: ['wp'],
-                description: '',
+                description: '<p>AHSNNetwork started as a very slow WordPress Visual Composer website that we converted to be more flexible</p><p>Previously the main site and the Atlas site were 2 separated domains, we converted them to be a single site with the possiblity to have different design headers depending on a field inside each page</p>',
                 publish_date: '2020-04-12',
                 images: ['ahsnnetwork.png']
             },
@@ -71,7 +71,7 @@ export const JobList = [
                 title: 'Brompton',
                 url: 'https://www.bromptontech.com/',
                 technologies: ['wp'],
-                description: '',
+                description: '<p>Brompton has been quite the challenge, as the client requested a fully editable website with very fast loading times, so we removed Visual Composer from the list and went with creating highly customazable blocks in Gutenberg</p>',
                 publish_date: '2020-04-12',
                 images: ['brompton.png']
             },
@@ -79,7 +79,7 @@ export const JobList = [
                 title: 'Stephenson Harwood',
                 url: 'https://www.offshoreenergylaw.com/',
                 technologies: ['d9'],
-                description: '',
+                description: '<p>Stephenson Harwood asked us for a very cutomizable multisite where they would be able to create a new site in 0 time, and Drupal was the best option for that</p><p>Directly from the cms they were able to create a new site, set up name, logos, descriptions, and after we would connect the domain to the server, all was working withouth any problem</p>',
                 publish_date: '2020-04-12',
                 images: ['stephenson_harwood.png', 'stephenson_harwood_2.png', 'stephenson_harwood_3.png', 'stephenson_harwood_4.png', 'stephenson_harwood_5.png', 'stephenson_harwood_6.png']
             },
@@ -116,7 +116,7 @@ export const JobList = [
                 title: 'Piero Nanni.me',
                 url: 'https://www.pieronanni.me',
                 technologies: ['react'],
-                description: '<p>My personal website, React based</p>',
+                description: '<p>My current website design was not something I have happy about, so I created a new version and, because lately I\'ve been more in touch with React, it\'s now NextJS based</p>',
                 publish_date: '2022-11-01',
                 images: ['pieronanni_me.png']
             },
@@ -132,7 +132,7 @@ export const JobList = [
                 title: 'Tatis\'s Wedding',
                 url: 'https://www.tatiswedding.it/',
                 technologies: ['react'],
-                description: '',
+                description: '<p>A very close friend of mine was getting married and I\'ve come with the idea to create a website that would hold all the informations about locations and what to do</p><p>Additionally, a RSVP system was in place for all the people to confirm their partecipation (it has now being removed as the even is already finished)</p>',
                 publish_date: '2020-05-13',
                 images: ['tatiswedding.png']
             },
@@ -203,7 +203,7 @@ export const JobList = [
                 title: 'EuroGru Amici',
                 url: 'http://www.eurogruamici.com/',
                 technologies: ['d8'],
-                description: '<p>description Soundpickr first!</p>',
+                description: '<p>One of the simplest and lightest Drupal 8 website built, most part of the content are high quality photos and they are displayed by using Views.</p><p>The website is based on the Bootstrap theme and it\'s been optimized for search engines so it\'s light and easy to navigate, both from desktop and mobile</p>',
                 publish_date: '2020-04-12',
                 images: ['eurogru-amici.png']
             },
@@ -211,7 +211,7 @@ export const JobList = [
                 title: 'Bed & Breakfast Farinelli',
                 url: 'https://web.archive.org/web/20160920210322/http://www.bedandbreakfast.bo.it/',
                 technologies: ['d7'],
-                description: '<p>description Soundpickr first!</p>',
+                description: '<p>Created many years ago not by me, this website was not build in modern technologies and I got the chance to convert the current theme into a responsive one, in order to be adeguate for tablet and mobile.</p><p>Unfortunately it has been closed in 2020. You can see the old live version on the link below</p>',
                 publish_date: '2020-04-12',
                 images: ['farinelli.png']
             },
@@ -219,7 +219,7 @@ export const JobList = [
                 title: 'Oleodinamica Bolognese',
                 url: 'https://web.archive.org/web/20220127143936/https://www.oleodinamicabolognese.it/',
                 technologies: ['d8'],
-                description: '<p>description Soundpickr first!</p>',
+                description: '<p>Website based on Drupal 8 and Bootstrap, previously was built with Drupal 6.</p><p>The graphic layout has been completly redisigned and, as for the previous version, the catalog is visible only for register users. Users don\'t have to choose the password during the registration but it will be sent directly in email, so the registration process is much more faster.</p><p>The newsletter block is connected with the MailUp service, a complete email and SMS delivery solution.</p>',
                 publish_date: '2020-04-12',
                 images: ['oleodinamicabolognese.png']
             },
@@ -227,7 +227,7 @@ export const JobList = [
                 title: 'Montieco',
                 url: 'http://www.montieco.it/',
                 technologies: ['d7'],
-                description: '<p>description Soundpickr first!</p>',
+                description: '<p>Montieco is a company that operates in the management and disposal of waste, the website has been renewed from an old Drupal 6 to a new Drupal 7.</p><p>New functionalities includes:</p><ul><li>being linked with Win Sm@.R.T.® EVO for the economic and organizational administrative management of waste with registered customers</li><li>integration with an URM (CRM) being able to have the complete history of all customers transactions, including the answers from mail</li></ul>',
                 publish_date: '2020-04-12',
                 images: ['montieco.png']
             },
@@ -235,7 +235,7 @@ export const JobList = [
                 title: 'Edilforme',
                 url: 'https://www.edilforme.it/',
                 technologies: ['d7'],
-                description: '<p>description Soundpickr first!</p>',
+                description: '<p>This is the only Drupal 7 site based on a Bootstrap theme I\'ve created, it\'s built with well structured back-end in order to allows the client to have a better data entry experience.</p><p>Advanced functionality includes a night cron that loads all the proprieties, generates an xml based on that content, validates the xml with a xsd and send the data by ftp to immobilare.it (the #1 estate ads portal in Italy)</p>',
                 publish_date: '2020-04-12',
                 images: ['edilforme.png']
             },
@@ -243,7 +243,7 @@ export const JobList = [
                 title: 'Arredart',
                 url: 'https://www.arredart.com/',
                 technologies: ['d7'],
-                description: '<p>description Soundpickr first!</p>',
+                description: '<p>Showcase website used to exhibit all the stands build by the company.</p><p>Inside the stand page, each time a user would click on an exhibition or a category, the relative stands were displayed with the use of ajax and custom queries, in addition to a small animation</p>',
                 publish_date: '2020-04-12',
                 images: ['arredart.png']
             },
@@ -251,7 +251,7 @@ export const JobList = [
                 title: 'I Portici Hotel',
                 url: 'https://web.archive.org/web/20190126045123/https://www.iporticihotel.com/en',
                 technologies: ['d8'],
-                description: '<p>description Soundpickr first!</p>',
+                description: '<p>This websites previously was a Drupal 7 with 4 languages and now, after the new version and the complete restyling, it\'s a Drupal 8 with 2 languages (this is the first Drupal 8 published in Magic).</p><p>Back-end functionalities includes a xml Bologna\'s events reader with a list displayed on a page, and for each event the administrator could save the it and the content of the event page with the possibility to moderate it before publishing.</p><p>Unfortunately the site has been rebuild in 2019 and the current live site is not my work anymore. You can see the previous version on the link below</p>',
                 publish_date: '2020-04-12',
                 images: ['iportici.png']
             },
@@ -259,7 +259,7 @@ export const JobList = [
                 title: 'Mira',
                 url: 'https://www.mira-srl.com/',
                 technologies: ['wp'],
-                description: '<p>description Soundpickr first!</p>',
+                description: '<p>This is the first WordPress website that I\'ve 100% developed since I\'ve started working at Magic, it\'s based on a customised version of the "Twenty Thirteen" theme as it was the most similar theme based on the graphic proposal.</p><p>The contact page is based on the CF7 plugin and the newsletter is connected to the MailUp service</p>',
                 publish_date: '2020-04-12',
                 images: ['mira.png']
             },
@@ -267,7 +267,7 @@ export const JobList = [
                 title: 'OkBedAndBreakfast',
                 url: 'https://web.archive.org/web/20220331015500/https://www.okbedandbreakfast.it/',
                 technologies: ['d7'],
-                description: '<p>description Soundpickr first!</p>',
+                description: '<p>First project in Drupal 7 that was given to me, shortly after I arrived at Magic. At the beginning the theme was completely different and after buying a new theme and re importing all users and structures already present I\'ve started developing all the missing parts.</p><p>Once the new site was ready, we bought bed & breakfast data and locations from the Chamber of Commerce for all the Italian regions and then we imported them in order to have much more bed & breakfast to show in the website.</p><p>This site was my training wheel for Drupal 7, a lot of the sections and procedures of the site have been rewritten during my years at Magic because I\'ve learned how to manage Drupal code in a more optimized way, so that in the end it could be a better and complete website.</p><p>At the moment the site is completely synchronized with MailUp with all the data form the structures, so we can send newsletters directly to the users we want and according to the desired purposes, such as sending emails automatically every few days to the owners that have not yet inserted the images of the structure.</p>',
                 publish_date: '2020-04-12',
                 images: ['okbedandbreakfast.png']
             },
@@ -275,7 +275,7 @@ export const JobList = [
                 title: 'Dott. Piero Notarrigo',
                 url: 'https://medicina-estetica-bologna.it/',
                 technologies: ['wp'],
-                description: '<p>description Soundpickr first!</p>',
+                description: '<p>Created many years ago not by me, this website was not build in modern technologies and I got the chance to convert the current theme into a responsive one, in order to be adeguate for tablet and mobile.</p><p>It was my first full responsive conversion project and the results were pretty amazing</p>',
                 publish_date: '2020-04-12',
                 images: ['medicina-estetica.png']
             },
@@ -283,7 +283,7 @@ export const JobList = [
                 title: 'Centro Carrelli',
                 url: 'https://web.archive.org/web/20190217091807/https://www.centrocarrelli.net/',
                 technologies: ['wp'],
-                description: '<p>description Soundpickr first!</p>',
+                description: '<p>The Centro Carelli website was based on the beautiful "Automotive" WordPress theme, with the inclusion of an advanced search system and the field mapping on the specific product pages</p><p>Unfortunately it has been rebuild in 2019, so the current live site is not my work anymore. You can see the previous version on the link below</p>',
                 publish_date: '2020-04-12',
                 images: ['centrocarrelli.png']
             },
@@ -291,7 +291,7 @@ export const JobList = [
                 title: 'Espositori Pubblicitari',
                 url: 'https://www.espositori-pubblicitari.it/',
                 technologies: ['magento'],
-                description: '<p>description Soundpickr first!</p>',
+                description: '<p>This is one of the ecommerce handled internally and based on magento, the project has started more than 10 years ago so when we understand that the most of the traffic comes from mobile, the theme as been converted in order to make it optimized for smartphone and tablet.</p><p>In addition to make it responsive, we made it as light as we could because it loaded 7 fonts and bigger images than what we needed.</p><p>Thanks to all this fixes, the website weight drop by 30% and it has speed up a little. Better improvement would be achieved by updating some of the plugins but we could not because they will not be compatible with the current CMS version</p>',
                 publish_date: '2020-04-12',
                 images: ['espositori.png']
             },
