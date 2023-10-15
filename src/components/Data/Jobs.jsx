@@ -154,7 +154,7 @@ export const JobList = [
             },
             {
                 title: 'Cronometro.info',
-                url: 'https://www.tatiswedding.it/',
+                url: 'https://www.cronometro.info/',
                 technologies: ['html5'],
                 description: '<p>Project born with the purpose of showing my js/jQuery knowledge and of testing how Google AdWords works (still to implement)</p><p>The result is a simple stopwatch that can handle partial timings.</p><p>It has been rebuilt in 2020 by using only vanilla js and drop the dependency on jQuery</p>',
                 publish_date: '2018-03-19',
