@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import Layout from '@layouts/Layout';
 import { JobList } from '@/components/Data/Jobs';
 import Link from 'next/link';
+import parse from 'html-react-parser';
+import DOMPurify from 'dompurify';
 
 export default function About() {
     const [jobs, setJobs] = useState(JobList);
@@ -75,14 +77,13 @@ export default function About() {
 
                             {/* Descriptions */}
                             <div className="timeline__descriptions">
-                                {jobs.length !== 0 &&
+                                {jobs.length > 0 &&
                                     jobs.map(job =>
                                         <div key={job.id} className={job.id === activeJob ? ' --active' : ''}>
-                                            <ul>
-                                                {job.description.map((description, id) =>
-                                                    <li key={id}>{description}</li>
-                                                )}
-                                            </ul>
+                                            <h3>{job.title}</h3>
+                                            <div><i><a href={job.company.url} target="_blank" rel="noreferrer">{job.company.name}</a> - {job.location} ({new Date(job.start_date).toLocaleDateString("en-GB", { year: 'numeric', month: 'long' })}{(job.end_date !== null ? ' - ' + new Date(job.end_date).toLocaleDateString("en-GB", { year: 'numeric', month: 'long' }) : '')})</i></div>
+                                            <br />
+                                            <div dangerouslySetInnerHTML={{ __html: job.description }} />
                                         </div>
                                     )
                                 }
