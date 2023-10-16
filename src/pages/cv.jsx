@@ -53,7 +53,7 @@ export default function Cv() {
 
                                 <ul className="project-list">
                                     {job.projects.map(project =>
-                                        <li key={project.title}><img src={'/' + project.technologies[0] + '.webp'} alt={project.title} title={project.title} height="15" width="15" />  <a href={project.url}>{project.title}</a></li>
+                                        <li key={project.title}><img src={process.env.NEXT_PUBLIC_APP_URL + '/' + project.technologies[0] + '.webp'} alt={project.title} title={project.title} height="15" width="15" />  <a href={project.url}>{project.title}</a></li>
                                     )}
                                 </ul>
                             </div>
