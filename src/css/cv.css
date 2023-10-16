@@ -1,12 +1,13 @@
 body {
-    font-family: "Fira Mono", monospace;
-    font-size: 30px;
+    font-family: Calibri, sans-serif;
+    font-size: 14px;
+    margin: 0;
 }
 
-/* a {
-    color: #337ab7;
+a {
+    color: #337ab7 !important;
     text-decoration: none;
-} */
+}
 
 .col-8 {
     float: left;
@@ -34,10 +35,30 @@ body {
     clear: both;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+ul {
+    margin-top: 0px;
+    padding-left: 15px;
+}
+
 .project-list {
     list-style-type: none;
     padding-left: 0;
     margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.project-list li {
+    width: 50%;
 }
 
 .section strong {

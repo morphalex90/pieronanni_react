@@ -12,7 +12,7 @@ const jsdom = require('jsdom')
         const CSScontent = fs.readFileSync('./src/css/cv.css', 'utf8');
 
         const browser = await puppeteer.launch({
-            headless: true,
+            headless: "new",
             args: [
                 '--no-sandbox',
                 '--disable-setuid-sandbox',
@@ -29,7 +29,7 @@ const jsdom = require('jsdom')
         await page.pdf({
             path: 'public/cv.pdf',
             format: 'A4',
-            scale: 0.67,
+            // scale: 0.67,
             margin: {
                 top: '0mm',
                 left: '0mm',

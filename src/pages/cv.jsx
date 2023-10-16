@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { JobList } from '@/components/Data/Jobs';
+import Image from 'next/image';
 
 export default function Cv() {
     const [jobs] = useState(JobList);
@@ -8,9 +9,10 @@ export default function Cv() {
         <div className="curriculum">
             <div className="col-6">
                 <div style={{ marginLeft: 20, marginRight: 20, paddingTop: 10 }}>
-                    <div style={{ fontSize: 25, fontWeight: 'bold' }}>Piero Nanni</div>
-                    <div style={{ marginBottom: 10 }}>Web developer</div>
-                    <div><em>I don&rquo;t know, it&rquo;s something about web developing that calms me down, ya know?</em></div>
+                    <div style={{ fontSize: 35, fontWeight: 'bold' }}>Piero Nanni</div>
+                    <div >Web developer</div>
+                    <div style={{ marginBottom: 10 }}><a href="https://www.pieronanni.me">www.pieronanni.me</a></div>
+                    {/* <div><em>I don&rquo;t know, it&rquo;s something about web developing that calms me down, ya know?</em></div> */}
 
                 </div>
             </div>
@@ -22,14 +24,15 @@ export default function Cv() {
             <div className="col-6 text-right">
                 <div style={{ marginLeft: 20, marginRight: 20, paddingTop: 10 }}>
                     <div>London, UK</div>
-                    {/* <div>+44 7724 146851</div> */}
-                    <div><a href="https://www.pieronanni.com">www.pieronanni.com</a></div>
+                    <div>+44 7724 146851</div>
                     <div><a href="mailto:piero.nanni@gmail.com">piero.nanni@gmail.com</a></div>
                     <div><a href="https://github.com/morphalex90">github.com/morphalex90</a></div>
                 </div>
             </div>
 
-            <div style={{ height: 2, width: '100%', backgroundColor: 'black', marginBottom: 10 }}></div>
+            <div className="clear"></div>
+
+            <div style={{ height: 2, width: '100%', marginBottom: 10, borderBottom: '2px solid #000' }}></div>
 
             {/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// Work Experience */}
             <div className="col-8">
@@ -37,44 +40,25 @@ export default function Cv() {
 
                     <div className="section"><strong>WORK EXPERIENCE</strong></div>
                     {jobs.length !== 0 &&
-                        jobs.map(job => {
+                        jobs.map(job =>
+                            <div key={job.id}>
+                                <div style={{ marginTop: 20 }}><strong style={{ fontSize: 20 }}>{job.title}</strong></div>
+                                <div className="col-6"><a href={job.company.url}>{job.company.name}</a> (<i>{job.location}</i>)</div>
+                                <div className="col-6"><i>{new Date(job.start_date).toLocaleDateString("en-GB", { year: 'numeric', month: 'long' })}{job.end_date !== null ? ' - ' + new Date(job.end_date).toLocaleDateString("en-GB", { year: 'numeric', month: 'long' }) : ''}</i></div>
+                                <div className="clear"></div>
+                                <br />
 
-                            if (job.end_date === '' || job.end_date === null) { // no finish year
-                                var end_date = new Date().getFullYear(); // save the current year
-                            } else {
-                                var end_date = job.end_date.substring(0, 4);
-                            }
+                                {/* <div style="margin-top:5px; font-style: italic;">Accomplishments:</div> */}
+                                <div dangerouslySetInnerHTML={{ __html: job.description_cv }} />
 
-                            return (
-                                <>
-                                    <div key={job.id} style={{ marginTop: 20 }}><strong>{job.title}</strong></div>
-                                    <a href={job.company.url}>{job.company.name}</a><br /> <br />
-                                    <div className="col-6"><i>{job.start_date} - {end_date}</i></div>
-
-                                    <div className="col-6 text-right"><i>{job.location}</i></div>
-                                    {/* <div style="margin-top:5px; font-style: italic;">Accomplishments:</div> */}
-                                    <div>{job.description_cv}</div>
-                                </>
-
-                            )
-                        })
+                                <ul className="project-list">
+                                    {job.projects.map(project =>
+                                        <li key={project.title}><img src={'/' + project.technologies[0] + '.webp'} alt={project.title} title={project.title} height="15" width="15" />  <a href={project.url}>{project.title}</a></li>
+                                    )}
+                                </ul>
+                            </div>
+                        )
                     }
-                    {/* 
-                        <div className="col-6"><ul className="project-list">
-                        foreach( $nodes as $node ) {
-                            $technology = Term::load($node->get('field_technology')->target_id);
-                            $technologyLogo = file_create_url($technology->get('field_image')->entity->getFileUri());
-
-                            <li><img src="'.$technologyLogo.'" height="15" width="15"> <a href="'.$node->get('field_url')->value.'">'.$node->getTitle().'</a></li>
-                            if( $count == (int)($nodesCount/2) ) {
-                                </ul></div><div className="col-6"><ul className="project-list">
-                            }
-                            $count++;
-                        }
-                        </ul></div>
-                        <div className="clear"></div>
-                    } */}
-
                 </div>
             </div>
 
@@ -87,8 +71,8 @@ export default function Cv() {
                     <ul>
                         <li>Languages
                             <ul>
-                                <li>HTML5</li>
                                 <li>PHP</li>
+                                <li>HTML5</li>
                                 <li>JavaScript</li>
                                 <li>CSS3, Sass & BEM</li>
                                 <li>SQL</li>
