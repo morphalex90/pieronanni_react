@@ -109,13 +109,13 @@ main {
 
 .content-wrapper {
     padding-top: 55px;
+    flex: 1 1;
 
     .homepage & {
         display: flex;
     }
 
     @media only screen and (min-width: 768px) {
-        flex: 1 1;
         // display: flex;
         // min-height: 602px;
         padding-top: 61px;
