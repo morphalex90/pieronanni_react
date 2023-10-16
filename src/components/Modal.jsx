@@ -24,7 +24,7 @@ export default function Modal({ show, onClose, title, content }) {
         <div className="overlay" onClick={handleCloseClick}>
             <div className="modal">
                 <div className="modal__header">
-                    <h1 className="modal__title">{title ? title : content.title}</h1>
+                    <h1 className="modal__title">{title || content.title}</h1>
                     <button className="modal__close" type="button" onClick={handleCloseClick}>[x]</button>
                 </div>
                 <div className="modal__content">
@@ -32,13 +32,19 @@ export default function Modal({ show, onClose, title, content }) {
 
                         <div>
                             {content.images.map((image, id) =>
-                                <Image key={id} src={require('../img/projects/' + image).default} alt={title ? title : content.title} title={title ? title : content.title} />
+                                <Image key={id} src={require('../img/projects/' + image).default} alt={title || content.title} title={title || content.title} />
                             )}
                         </div>
 
                         <div>
                             {parse(DOMPurify.sanitize(content.description, { USE_PROFILES: { html: true } }))}
-                            <a href={content.url} className="button" target="_blank" rel="noreferrer">Visit site</a>
+
+                            <div style={{ display: 'flex', gap: 10 }}>
+                                <a href={content.url} className="button" target="_blank" rel="noreferrer">Visit site</a>
+                                {content.github &&
+                                    <a href={content.github} className="button" target="_blank" rel="noreferrer">GitHub</a>
+                                }
+                            </div>
                         </div>
                     </div>
 
