@@ -72,8 +72,9 @@
     &__descriptions {
         margin-top: 10px;
 
-        div {
+        > div {
             display: none;
+            color: #000;
 
             &.--active {
                 display: block;
@@ -81,6 +82,15 @@
 
             :last-child {
                 margin-bottom: 0;
+            }
+
+            a {
+                text-decoration: underline;
+                color: #000;
+            }
+
+            ul {
+                margin-top: 0;
             }
         }
     }
