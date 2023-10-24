@@ -22,7 +22,7 @@ export default function Cv() {
                 </div> */}
 
             <div className="col-6 text-right">
-                <div style={{ marginLeft: 20, marginRight: 20, paddingTop: 10 }}>
+                <div style={{ marginLeft: 20, marginRight: 20, paddingTop: 20 }}>
                     <div>London, UK</div>
                     <div>+44 7724 146851</div>
                     <div><a href="mailto:piero.nanni@gmail.com">piero.nanni@gmail.com</a></div>
@@ -42,7 +42,7 @@ export default function Cv() {
                     {jobs.length !== 0 &&
                         jobs.map(job =>
                             <div key={job.id}>
-                                <div style={{ marginTop: 20 }}><strong style={{ fontSize: 20 }}>{job.title}</strong></div>
+                                <div style={{ marginTop: 20 }}><strong style={{ fontSize: 19 }}>{job.title}</strong></div>
                                 <div className="col-6"><a href={job.company.url}>{job.company.name}</a> (<i>{job.location}</i>)</div>
                                 <div className="col-6"><i>{new Date(job.start_date).toLocaleDateString("en-GB", { year: 'numeric', month: 'long' })}{job.end_date !== null ? ' - ' + new Date(job.end_date).toLocaleDateString("en-GB", { year: 'numeric', month: 'long' }) : ''}</i></div>
                                 <div className="clear"></div>
@@ -114,7 +114,7 @@ export default function Cv() {
                         <li>Flexible</li>
                         <li>Multi tasking</li>
                         <li>Adaptive to change</li>
-                        <li></li>
+                        <li>Tech and code news nerd</li>
                         {/* <li>Enthusiastic about web development</li> */}
                         {/* <li>Willing to learn new skills every day</li> */}
                     </ul>
@@ -138,7 +138,7 @@ export default function Cv() {
 
                     <ul>
                         <li>Italian - mother tongue</li>
-                        <li>English - medium level</li>
+                        <li>English</li>
                     </ul>
 
                 </div>
