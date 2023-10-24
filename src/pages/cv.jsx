@@ -114,8 +114,9 @@ export default function Cv() {
                         <li>Flexible</li>
                         <li>Multi tasking</li>
                         <li>Adaptive to change</li>
-                        <li>Enthusiastic about web development</li>
-                        <li>Willing to learn new skills every day</li>
+                        <li></li>
+                        {/* <li>Enthusiastic about web development</li> */}
+                        {/* <li>Willing to learn new skills every day</li> */}
                     </ul>
 
                     <div className="section"><strong>EDUCATION</strong></div>
@@ -123,7 +124,7 @@ export default function Cv() {
                     <ul>
                         <li>2018 - Web Analytics @ Mb web, Milan, Italy</li>
                         <li>2014 - HTML/CSS course @ CdS Bologna, Bologna, Italy</li>
-                        <li>2010 - Computer Science course @ High School Aldini Valeriani Sirani, Bologna, Italy</li>
+                        {/* <li>2010 - Computer Science course @ High School Aldini Valeriani Sirani, Bologna, Italy</li> */}
                     </ul>
 
                     <div className="section"><strong>INTERESTS</strong></div>

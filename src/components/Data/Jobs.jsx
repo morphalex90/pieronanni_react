@@ -7,8 +7,8 @@ export const JobList = [
             url: 'https://www.soundpickr.com',
         },
         location: 'London, UK',
-        description: '<p>Develop the platform</p><p>Be in charge of delivering functionalities and handle other people\'s code</p>',
-        description_cv: '<ul><li>Develop the platform</li><li>Be in charge of delivering functionalities and handle other people\'s code</li></ul>',
+        description: '<p>Developed the main API, the main site, the user panel and the admin panel</p><p>Improved Google ranks and achieved 50% more users in the past 2 months</p>',
+        description_cv: '<ul><li>Developed the main API, the main site, the user panel and the admin panel</li><li>Improved Google ranks and achieved 50% more users in the past 2 months</li></ul>',
         start_date: '2022-05-09',
         end_date: null,
         projects: [
@@ -16,7 +16,7 @@ export const JobList = [
                 title: 'Soundpickr',
                 url: 'https://www.soundpickr.com',
                 technologies: ['react', 'laravel'],
-                description: '<p>Soundpickr has started as a small project for a friend, it then escalated to become a full scale big project where I was hired as the CTO</p><p>My knoledge of Laravel and React espanded quite significally thanks to this project</p><p>We structured it to have the main API in Laravel, that acts as the center of all, that is connected to all front-ends</p>',
+                description: '<p>Soundpickr has started as a small project for a friend, it then escalated to become a full scale big project where I was hired as the CTO</p><p>My knoledge of Laravel and React espanded quite significally thanks to this project</p><p>We structured it to have the main API in Laravel, that acts as the center of all and that is connected to all front-ends</p>',
                 publish_date: '2020-04-12',
                 images: ['soundpickr.webp']
             },
@@ -31,7 +31,7 @@ export const JobList = [
         },
         location: 'London, UK',
         description: '<p>Web Developer at PurrDigital</p><ul><li>Develop and publish the first Drupal 8 and 9 projects of the company</li><li>Optimize sites with best practices and from a code / security prospective</li></ul>',
-        description_cv: '<ul><li>Develop and publish the first Drupal 8 and 9 projects of the company</li><li>Optimize WordPress and Drupal sites with best practices and from a code / security prospective</li></ul>',
+        description_cv: '<ul><li>Developed and published the first Drupal 8 and 9 projects of the company</li><li>Optimised WordPress and Drupal sites with best practices and from a code / security prospective</li></ul>',
         start_date: '2018-11-12',
         end_date: '2022-05-06',
         projects: [
@@ -94,7 +94,7 @@ export const JobList = [
         },
         location: 'London, UK',
         description: '<p>In my personal free time I like creating websites for people who is in need:</p><ul><li><a href="https://www.saraannanadalini.com" target="_blank" title="Visit Sara Anna Nadalini">Sara Anna Nadalini</a> (WordPress, personal portfolio)</li><li><a href="https://www.labuonabottega.it" target="_blank" title="Visit La Buona Bottega">La Buona Bottega</a> (Drupal 8, e-commerce based on Ubercart and Bootstrap)</li><li><a href="https://www.animazionelepiccolepesti.it" target="_blank" title="Visit Animazione le Piccole Pesti">Animazione le Piccole Pesti</a> (WordPress based on 100% custom blocks for Gutenberg. This side does have a <a href="https://store.animazionelepiccolepesti.it/" target="_blank" title="Visit Animazione le Piccole Pesti Store">store</a> on a subdomain, Drupal based)</li></ul><p>I love experimenting with new ideas and creating useful tools:</p><ul><li><a href="https://www.pieronanni.com" target="_blank" title="Visit Piero Nanni">Piero Nanni</a> (Drupal 8, my personal website)</li><li><a href="https://www.cronometro.info" target="_blank" title="Cronometro.info">Cronometro.info</a> (<a href="https://github.com/morphalex90/cronometro.info" target="_blank" title="View Cronometro.info on GitHub">Github</a>)</li><li><a href="https://tools.morpheus90.com" target="_blank" title="Visit SEO Tools">SEO Tools</a> (PHP, useful checkups that I usually check on a website. Currently rebuilding in Laravel)</li></ul>',
-        description_cv: '<ul><li>Build tools and websites for clients and myself</li><li>Test latest technology and best practices on current and new projects</li></ul>',
+        description_cv: '<ul><li>Built tools and websites for clients and myself</li><li>Tested latest technology and best practices on current and new projects</li></ul>',
         start_date: '2016-03-01',
         end_date: null,
         projects: [
@@ -306,7 +306,7 @@ export const JobList = [
         },
         location: 'Bologna, Italy',
         description: '<p>BlackRaven was a small indie software house formed by a group of close friends with the same passion about videogames. We developed and published some apps for iOS devices as well as a few pc games.</p><p>My first role was web programmer, so I created and maintained the main <a href="https://www.blackravenproduction.com/" target="_blank" title="Visit BlackRaven">website</a> in WordPress. Other than the site, I was in charge of creating databases connections for the apps we developed.<br />To cover for one of the vacancies in our team, I also learnt basic 3D modelling using programs like <a href="http://www.milkshape3d.com/" target="_blank" title="visit Milkshape">Milkshape</a> and <a href="https://www.autodesk.co.uk/products/3ds-max/overview" target="_blank" title="3ds Max">3ds Max</a> (my creations examples <a href="https://www.youtube.com/watch?v=nvR8JaftYb8" target="_blank" title="See the models">video</a>).</p>',
-        description_cv: '<ul><li>Learnt basic 3D modelling using <a href="http://www.milkshape3d.com/" target="_blank" title="visit Milkshape">Milkshape</a> and <a href="https://www.autodesk.co.uk/products/3ds-max/overview" target="_blank" title="3ds Max">3ds Max</a> (<a href="https://www.youtube.com/watch?v=nvR8JaftYb8" target="_blank" title="See the models">video</a> examples)</li><li>Created and maintained the main <a href="https://www.blackravenproduction.com/" target="_blank" title="Visit BlackRaven">website</a> in WordPress</li><li>In charge of creating databases connections for the developed apps</li></ul>',
+        description_cv: '<ul><li>Learnt basic 3D modelling using Milkshape and 3ds Max (<a href="https://www.youtube.com/watch?v=nvR8JaftYb8" target="_blank" title="See the models">video</a> examples)</li><li>Created and maintained the main <a href="https://www.blackravenproduction.com/" target="_blank" title="Visit BlackRaven">website</a> in WordPress</li><li>In charge of creating databases connections for the developed apps</li></ul>',
         start_date: '2011-02-01',
         end_date: '2015-08-01',
         projects: [
