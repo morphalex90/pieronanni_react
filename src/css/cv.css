@@ -76,6 +76,6 @@ ul {
     font-size: 20px;
 }
 
-/* .job-description li:last-child {
+.job-description ul {
     margin-bottom: 0;
-} */
+}
