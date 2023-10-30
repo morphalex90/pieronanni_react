@@ -9,6 +9,11 @@ a {
     text-decoration: none;
 }
 
+.col-9 {
+    float: left;
+    width: 74%;
+}
+
 .col-8 {
     float: left;
     width: 66%;
@@ -69,4 +74,8 @@ ul {
 .section strong {
     margin-bottom: 4px;
     font-size: 20px;
+}
+
+.job-description li:last-child {
+    margin-bottom: 0;
 }
