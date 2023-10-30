@@ -31,7 +31,7 @@ export const JobList = [
         },
         location: 'London, UK',
         description: '<p>Web Developer at PurrDigital</p><ul><li>Develop and publish the first Drupal 8 and 9 projects of the company</li><li>Optimize sites with best practices and from a code / security prospective</li></ul>',
-        description_cv: '<ul><li>Optimised WP and Drupal sites with best practices and from a code and security prospective, converted to be composer based and deployed to Kinsta and Ploi</li><li>Created several tools to export and convert page content from old sites to new ones</li><li>Developed and published the first Drupal 8 / 9 project of the company to be a multisite where it\'s possible to easly add new sites</li></ul>',
+        description_cv: '<ul><li>Optimised WP and Drupal sites with best practices and from a code and security prospective, converted to be composer based and deployed to Kinsta and Ploi</li><li>Created several tools to export and convert page content from old to new sites</li><li>Developed and published the first Drupal 8 / 9 project of the company to be a multisite with the possibility to easly add new sites</li></ul>',
         start_date: '2018-11-12',
         end_date: '2022-05-06',
         projects: [
@@ -94,7 +94,7 @@ export const JobList = [
         },
         location: 'London, UK',
         description: '<p>In my personal free time I like creating websites for people who is in need:</p><ul><li><a href="https://www.saraannanadalini.com" target="_blank" title="Visit Sara Anna Nadalini">Sara Anna Nadalini</a> (WordPress, personal portfolio)</li><li><a href="https://www.labuonabottega.it" target="_blank" title="Visit La Buona Bottega">La Buona Bottega</a> (Drupal 8, e-commerce based on Ubercart and Bootstrap)</li><li><a href="https://www.animazionelepiccolepesti.it" target="_blank" title="Visit Animazione le Piccole Pesti">Animazione le Piccole Pesti</a> (WordPress based on 100% custom blocks for Gutenberg. This side does have a <a href="https://store.animazionelepiccolepesti.it/" target="_blank" title="Visit Animazione le Piccole Pesti Store">store</a> on a subdomain, Drupal based)</li></ul><p>I love experimenting with new ideas and creating useful tools:</p><ul><li><a href="https://www.pieronanni.com" target="_blank" title="Visit Piero Nanni">Piero Nanni</a> (Drupal 8, my personal website)</li><li><a href="https://www.cronometro.info" target="_blank" title="Cronometro.info">Cronometro.info</a> (<a href="https://github.com/morphalex90/cronometro.info" target="_blank" title="View Cronometro.info on GitHub">Github</a>)</li><li><a href="https://tools.morpheus90.com" target="_blank" title="Visit SEO Tools">SEO Tools</a> (PHP, useful checkups that I usually check on a website. Currently rebuilding in Laravel)</li></ul>',
-        description_cv: '<ul><li>Built tools and websites for clients and myself in WP, Drupal, Laravel and React</li><li>Tested latest technology and best practices on current and new projects</li></ul>',
+        description_cv: '<ul><li>Built tools and websites for clients and myself in WP, Drupal, Laravel and React</li><li>Tested latest technologies and best practices on current and new projects</li></ul>',
         start_date: '2016-03-01',
         end_date: null,
         projects: [
