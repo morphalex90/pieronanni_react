@@ -8,7 +8,7 @@ export const JobList = [
         },
         location: 'London, UK',
         description: '<p>Developed the main API, the main site, the user panel and the admin panel</p><p>Improved Google ranks and achieved 50% more users in the past 2 months</p>',
-        description_cv: '<ul><li>Developed the API in Laravel, the site, the user panel and the admin panel in Next.js</li><li>Improved Google ranks and achieved 50% more users in the past 2 months</li></ul>',
+        description_cv: '<ul><li>Developed the API in Laravel; the site, the user panel and the admin panel in Next.js</li><li>Implemented Spotify API and got updated informations of around 7M artists</li><li>Built the song uploader that automatically compress to mp3 and upload to AWS S3 and got around 4k songs</li><li>Improved Google ranks and achieved 50% more users in the past 2 months</li></ul>',
         start_date: '2022-05-09',
         end_date: '2023-10-31',
         projects: [
