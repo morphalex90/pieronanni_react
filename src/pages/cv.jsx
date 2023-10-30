@@ -76,6 +76,7 @@ export default function Cv() {
                                 <li>JavaScript</li>
                                 <li>CSS3, Sass & BEM</li>
                                 <li>SQL</li>
+                                <li>TypeScript</li>
                             </ul>
                         </li>
 
