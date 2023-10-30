@@ -1,21 +1,21 @@
 export const JobList = [
     {
         id: 5,
-        title: 'CTO',
+        title: 'Lead Developer',
         company: {
             name: 'Soundpickr',
             url: 'https://www.soundpickr.com',
         },
         location: 'London, UK',
         description: '<p>Developed the main API, the main site, the user panel and the admin panel</p><p>Improved Google ranks and achieved 50% more users in the past 2 months</p>',
-        description_cv: '<ul><li>Developed the API, the site, the user panel and the admin panel</li><li>Improved Google ranks and achieved 50% more users in the past 2 months</li></ul>',
+        description_cv: '<ul><li>Developed the API in Laravel, the site, the user panel and the admin panel in Next.js</li><li>Improved Google ranks and achieved 50% more users in the past 2 months</li></ul>',
         start_date: '2022-05-09',
         end_date: '2023-10-31',
         projects: [
             {
                 title: 'Soundpickr',
                 url: 'https://www.soundpickr.com',
-                technologies: ['react', 'laravel'],
+                technologies: ['laravel', 'react'],
                 description: '<p>Soundpickr has started as a small project for a friend, it then escalated to become a full scale big project where I was hired as the CTO</p><p>My knoledge of Laravel and React espanded quite significally thanks to this project</p><p>We structured it to have the main API in Laravel, that acts as the center of all and that is connected to all front-ends</p>',
                 publish_date: '2020-04-12',
                 images: ['soundpickr.webp']
@@ -98,15 +98,16 @@ export const JobList = [
         start_date: '2016-03-01',
         end_date: null,
         projects: [
+            // {
+            //     title: 'OnlyDogs',
+            //     url: 'https://onlydogs.icu',
+            //     github: 'https://github.com/morphalex90/onlydogs.icu',
+            //     technologies: ['react'],
+            //     description: '<p>It uses the https://thedogapi.com API</p>',
+            //     publish_date: '2023-07-16',
+            //     images: ['onlydogs.png']
+            // },
             {
-                title: 'OnlyDogs',
-                url: 'https://onlydogs.icu',
-                github: 'https://github.com/morphalex90/onlydogs.icu',
-                technologies: ['react'],
-                description: '<p>It uses the https://thedogapi.com API</p>',
-                publish_date: '2023-07-16',
-                images: ['onlydogs.png']
-            }, {
                 title: 'OnlyCats',
                 url: 'https://onlycats.icu',
                 github: 'https://github.com/morphalex90/onlycats.icu',
@@ -119,14 +120,14 @@ export const JobList = [
                 url: 'https://www.pieronanni.me',
                 github: 'https://github.com/morphalex90/pieronanni_react',
                 technologies: ['react'],
-                description: '<p>My current website design was not something I have happy about, so I created a new version and, because lately I\'ve been more in touch with React, it\'s now NextJS based</p>',
+                description: '<p>My current website design was not something I have happy about, so I created a new version and, because lately I\'ve been more in touch with React, it\'s now Next.js based</p>',
                 publish_date: '2022-11-01',
                 images: ['pieronanni_me.png']
             },
             {
                 title: 'SEO Tools',
                 url: 'https://tools.morpheus90.com',
-                technologies: ['react', 'laravel'],
+                technologies: ['laravel', 'react'],
                 github: 'https://github.com/morphalex90/tools',
                 description: '<p>During the develop of my websites I realized that I was missing a tool that would group the functions I use the most.</p><p>After digging the net looking for something useful and not founding something that pleased me, I\'ve started developing this website where I could insert all the tools I needed, in particular:</p><ul><li>check of title and alt on images</li><li>check of all the headings</li><li>check of all the meta datas</li><li>check of the file robots.txt and it\'s content</li><li>check of the sitemap existence and it\'s content</li></ul><p>After lots of tests and fixes, I\'ve finally released the first version built in pure HTML and Javascript / jQuery.</p><p>A first rebuild was made, by converting the project into a full Laravel installation in order to have better structure, but still I was not satisfied.</p><p>Then a second rebuild was made, this time with a combination of React in front-end (published in Netlify) and a Lumen back-end hosted into my server.<br />I\'ve choose this combination during my initial studies with React because I find that React is pretty fast and the back-end is only called by API when needed.<br />The final result is really fast compared to the previous 2 and this time I\'m quite happy with this version.</p>',
                 publish_date: '2020-07-02',
