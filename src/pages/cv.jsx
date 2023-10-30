@@ -35,7 +35,7 @@ export default function Cv() {
             <div style={{ height: 2, width: '100%', marginBottom: 10, borderBottom: '2px solid #000' }}></div>
 
             {/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// Work Experience */}
-            <div className="col-8">
+            <div className="col-9">
                 <div style={{ marginLeft: 20, borderRight: '2px solid #000', paddingRight: 20 }}>
 
                     <div className="section"><strong>WORK EXPERIENCE</strong></div>
@@ -49,7 +49,7 @@ export default function Cv() {
                                 <br />
 
                                 {/* <div style="margin-top:5px; font-style: italic;">Accomplishments:</div> */}
-                                <div dangerouslySetInnerHTML={{ __html: job.description_cv }} />
+                                <div className="job-description" dangerouslySetInnerHTML={{ __html: job.description_cv }} />
 
                                 <ul className="project-list">
                                     {job.projects.map(project =>
@@ -63,7 +63,7 @@ export default function Cv() {
             </div>
 
             {/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// Sidebar */}
-            <div className="col-4">
+            <div className="col-3">
                 <div style={{ marginLeft: 20, marginRight: 20 }}>
 
                     <div className="section"><strong>TECHNICAL SKILLS</strong></div>
