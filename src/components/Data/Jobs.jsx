@@ -8,7 +8,7 @@ export const JobList = [
         },
         location: 'London, UK',
         description: '<p>Developed the main API, the main site, the user panel and the admin panel</p><p>Improved Google ranks and achieved 50% more users in the past 2 months</p>',
-        description_cv: '<ul><li>Developed the API in Laravel; the site, the user panel and the admin panel in Next.js</li><li>Implemented Spotify API and got updated informations of around 7M artists</li><li>Built the song uploader that compress to mp3 and upload to AWS S3 and got around 4k songs</li><li>Improved Google ranks and achieved 50% more users in the past 2 months</li></ul>',
+        description_cv: '<ul><li>Developed the API in Laravel, all the front-ends in Vite / Next.js</li><li>Implemented Spotify API and got updated informations of around 7M artists</li><li>Built the song uploader that compresses to mp3 and uploads to AWS S3 around 4k songs so far</li><li>Improved Google ranks and achieved 50% more users in the past 2 months</li></ul>',
         start_date: '2022-05-09',
         end_date: '2023-10-31',
         projects: [
@@ -31,7 +31,7 @@ export const JobList = [
         },
         location: 'London, UK',
         description: '<p>Web Developer at PurrDigital</p><ul><li>Develop and publish the first Drupal 8 and 9 projects of the company</li><li>Optimize sites with best practices and from a code / security prospective</li></ul>',
-        description_cv: '<ul><li>Developed and published the first Drupal 8 and 9 projects of the company</li><li>Optimised WP and Drupal sites with best practices and from a code / security prospective</li><li>Deployed WP sites to Kinsta and Drupal sites to Ploi</li><li>Converted WP and Drupal sites to be composer based</li><li>Created several tools to export and convert page content from old sites to new ones</li></ul>',
+        description_cv: '<ul><li>Optimised WP and Drupal sites with best practices and from a code and security prospective, converted to be composer based and deployed to Kinsta and Ploi</li><li>Created several tools to export and convert page content from old sites to new ones</li><li>Developed and published the first Drupal 8 / 9 project of the company to be a multisite where it\'s possible to easly add new sites</li></ul>',
         start_date: '2018-11-12',
         end_date: '2022-05-06',
         projects: [
