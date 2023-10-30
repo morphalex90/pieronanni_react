@@ -8,7 +8,7 @@ export const JobList = [
         },
         location: 'London, UK',
         description: '<p>Developed the main API, the main site, the user panel and the admin panel</p><p>Improved Google ranks and achieved 50% more users in the past 2 months</p>',
-        description_cv: '<ul><li>Developed the API in Laravel, all the front-ends in Vite / Next.js</li><li>Implemented Spotify API and got updated informations of around 7M artists</li><li>Built the song uploader that compresses to mp3 and uploads to AWS S3 around 4k songs so far</li><li>Improved Google ranks and achieved 50% more users in the past 2 months</li></ul>',
+        description_cv: '<ul><li>Developed the API in Laravel and all the front-ends in Next.js / Vite</li><li>Implemented Spotify API and stored updated informations of around 7M artists</li><li>Built the song uploader that compressed to mp3 and uploaded to AWS S3 around 4k songs so far</li><li>Improved Google ranks and achieved 50% more users in the past 2 months</li></ul>',
         start_date: '2022-05-09',
         end_date: '2023-10-31',
         projects: [
@@ -31,7 +31,7 @@ export const JobList = [
         },
         location: 'London, UK',
         description: '<p>Web Developer at PurrDigital</p><ul><li>Develop and publish the first Drupal 8 and 9 projects of the company</li><li>Optimize sites with best practices and from a code / security prospective</li></ul>',
-        description_cv: '<ul><li>Optimised WP and Drupal sites with best practices and from a code and security prospective, converted to be composer based and deployed to Kinsta and Ploi</li><li>Created several tools to export and convert page content from old to new sites</li><li>Developed and published the first Drupal 8 / 9 project of the company to be a multisite with the possibility to easly add new sites</li></ul>',
+        description_cv: '<ul><li>Optimised WP and Drupal sites with best practices and from a code and security prospective, converted to be composer based and deployed to Kinsta and Ploi</li><li>Created several tools to export and convert page content from old to new sites</li><li>Developed and published the first Drupal 8  project of the company to be a multisite with the possibility to easly add new sites</li></ul>',
         start_date: '2018-11-12',
         end_date: '2022-05-06',
         projects: [
@@ -94,7 +94,7 @@ export const JobList = [
         },
         location: 'London, UK',
         description: '<p>In my personal free time I like creating websites for people who is in need:</p><ul><li><a href="https://www.saraannanadalini.com" target="_blank" title="Visit Sara Anna Nadalini">Sara Anna Nadalini</a> (WordPress, personal portfolio)</li><li><a href="https://www.labuonabottega.it" target="_blank" title="Visit La Buona Bottega">La Buona Bottega</a> (Drupal 8, e-commerce based on Ubercart and Bootstrap)</li><li><a href="https://www.animazionelepiccolepesti.it" target="_blank" title="Visit Animazione le Piccole Pesti">Animazione le Piccole Pesti</a> (WordPress based on 100% custom blocks for Gutenberg. This side does have a <a href="https://store.animazionelepiccolepesti.it/" target="_blank" title="Visit Animazione le Piccole Pesti Store">store</a> on a subdomain, Drupal based)</li></ul><p>I love experimenting with new ideas and creating useful tools:</p><ul><li><a href="https://www.pieronanni.com" target="_blank" title="Visit Piero Nanni">Piero Nanni</a> (Drupal 8, my personal website)</li><li><a href="https://www.cronometro.info" target="_blank" title="Cronometro.info">Cronometro.info</a> (<a href="https://github.com/morphalex90/cronometro.info" target="_blank" title="View Cronometro.info on GitHub">Github</a>)</li><li><a href="https://tools.morpheus90.com" target="_blank" title="Visit SEO Tools">SEO Tools</a> (PHP, useful checkups that I usually check on a website. Currently rebuilding in Laravel)</li></ul>',
-        description_cv: '<ul><li>Built tools and websites for clients and myself in WP, Drupal, Laravel and React</li><li>Tested latest technologies and best practices on current and new projects</li></ul>',
+        description_cv: '<ul><li>Built tools and websites for clients and myself in WP, Drupal, Laravel and React</li><li>Tested latest technologies and best practices on current and new projects</li><li>Optimised e-commerce sites to increase sells with better rankings</li></ul>',
         start_date: '2016-03-01',
         end_date: null,
         projects: [
@@ -134,7 +134,7 @@ export const JobList = [
                 images: ['tools.png']
             },
             {
-                title: 'Tatis\'s Wedding',
+                title: 'Tati\'s Wedding',
                 url: 'https://www.tatiswedding.it/',
                 github: 'https://github.com/morphalex90/tatiswedding',
                 technologies: ['react'],
@@ -202,14 +202,14 @@ export const JobList = [
             url: 'https://www.magicnet.it',
         },
         location: 'Bologna, Italy',
-        description: '<p>Web Developer @ Magic (Bologna, Italy), with the task of developing websites and e-commerce platforms with WordPress, Drupal and Magento.</p><p>Over three years (for two of them I was the only developer) I learnt about how to build websites from graphical ideas, publishing them with WHM and cPanel, keeping them updated and optimizing them with SEO (thanks to&amp; <a href="https://visual-seo.com/" target="_blank" title="Visit Visual SEO Studio">Visual SEO Studio</a> and <a href="https://www.screamingfrog.co.uk" target="_blank" title="Visit Screaming Frog">Screaming Frog</a>) and lots of useful tweaks.</p><p>Drupal 8:</p><ul><li><a href="https://www.oleodinamicabolognese.it" target="_blank" title="Oleodinamica Bolognese">Oleodinamica Bolognese</a> (Bootstrap based theme with private catalogue)</li><li><a href="http://www.eurogruamici.com" target="_blank" title="EuroGru Amici">EuroGru Amici</a> (Bootstrap based theme based on a previous bought theme not well structured)</li><li><a href="https://www.iporticihotel.com/en" target="_blank" title="I Portici Hotel Bologna">I Portici Hotel Bologna</a> (Bootstrap based theme; My best Drupal 8 work in terms of customization)</li></ul><p>Drupal 7:</p><ul><li><a href="https://www.magicnet.it" target="_blank" title="Magic">Magic</a> (the web agency website; I made it faster and lighter than it was before)</li><li><a href="https://www.okbedandbreakfast.it" target="_blank" title="OkBedAndBreakfast">OkBedAndBreakfast</a> (three-year internal project; My best Drupal 7 work in terms of customization)</li><li><a href="http://www.montieco.it" target="_blank" title="Montieco">Montieco</a> (Bootstrap based theme with a Drupal based URM)</li><li><a href="http://www.edilforme.it" target="_blank" title="Edilforme">Edilforme</a> (Bootstrap based theme with advanced back-office functions)</li><li><a href="https://www.arredart.com/" target="_blank" title="Arredart">Arredart</a> (ajax calls with optimized queries in order to load the stands)</li><li><a href="http://www.bedandbreakfast.bo.it/en" target="_blank" title="Bed&amp;Breakfast Farinelli">Bed&amp;Breakfast Farinelli</a> (converted to a responsive theme)</li></ul><p>WordPress:</p><ul><li><a href="https://www.mira-srl.com" target="_blank" title="Mira SRL">Mira SRL</a> (first WordPress project in this web agency, mainly based on image galleries)</li><li><a href="https://medicina-estetica-bologna.it/" target="_blank" title="Dott. Piero Notarrigo">Dott. Piero Notarrigo</a> (converted to a responsive theme)</li><li><a href="https://www.centrocarrelli.net" target="_blank" title="Centro Carrelli">Centro Carrelli</a> (custom product\'s page with slider and custom fields)</li></ul><p>Magento:</p><ul><li><a href="https://www.espositori-pubblicitari.it" target="_blank" title="Espositori Pubblicitari">Espositori Pubblicitari</a> (converted to a responsive theme and added structured data for products and news)</li><li><a href="https://www.plexiarredo.it" target="_blank" title="Plexi Arredo">Plexi Arredo</a> (integrated Google Shopping and added structured data for products)</li></ul>',
-        description_cv: '<ul><li>In charge of all the production for 2 years out of 3</li><li>Developed and maintained WP and Drupal sites</li><li>SEO optimized already created sites in WP, Drupal and Magento</li></ul>',
+        description: '<p>Web Developer @ Magic (Bologna, Italy), with the task of developing websites and e-commerce platforms with WordPress, Drupal and Magento.</p><p>Over three years (for two of them I was the only developer) I learnt about how to build websites from graphical ideas, publishing them with WHM and cPanel, keeping them updated and optimizing them with SEO (thanks to&amp; <a href="https://visual-seo.com/" target="_blank" title="Visit Visual SEO Studio">Visual SEO Studio</a> and <a href="https://www.screamingfrog.co.uk" target="_blank" title="Visit Screaming Frog">Screaming Frog</a>) and lots of useful tweaks.</p><p>Drupal 8:</p><ul><li><a href="https://www.oleodinamicabolognese.it" target="_blank" title="Oleodinamica Bolognese">Oleodinamica Bolognese</a> (Bootstrap based theme with private catalogue)</li><li><a href="http://www.eurogruamici.com" target="_blank" title="EuroGru Amici">EuroGru Amici</a> (Bootstrap based theme based on a previous bought theme not well structured)</li><li><a href="https://www.iporticihotel.com/en" target="_blank" title="I Portici Hotel Bologna">I Portici Hotel Bologna</a> (Bootstrap based theme; My best Drupal 8 work in terms of customization)</li></ul><p>Drupal 7:</p><ul><li><a href="https://www.magicnet.it" target="_blank" title="Magic">Magic</a> (the web agency website; I made it faster and lighter than it was before)</li><li><a href="https://www.okbedandbreakfast.it" target="_blank" title="OkBedAndBreakfast">OkBedAndBreakfast</a> (three-year internal project; My best Drupal 7 work in terms of customization)</li><li><a href="http://www.montieco.it" target="_blank" title="Montieco">Montieco</a> (Bootstrap based theme with a Drupal based URM)</li><li><a href="http://www.edilforme.it" target="_blank" title="Edilforme">Edilforme</a> (Bootstrap based theme with advanced back-office functions)</li><li><a href="https://www.arredart.com/" target="_blank" title="Arredart">Arredart</a> (ajax calls with optimized queries in order to load the stands)</li><li><a href="http://www.bedandbreakfast.bo.it/en" target="_blank" title="Bed&amp;Breakfast Farinelli">Bed&amp;Breakfast Farinelli</a> (converted to a responsive theme)</li></ul><p>WordPress:</p><ul><li><a href="https://web.archive.org/web/20190129221656/http://www.mira-srl.com/" target="_blank" title="Mira SRL">Mira SRL</a> (first WordPress project in this web agency, mainly based on image galleries)</li><li><a href="https://medicina-estetica-bologna.it/" target="_blank" title="Dott. Piero Notarrigo">Dott. Piero Notarrigo</a> (converted to a responsive theme)</li><li><a href="https://www.centrocarrelli.net" target="_blank" title="Centro Carrelli">Centro Carrelli</a> (custom product\'s page with slider and custom fields)</li></ul><p>Magento:</p><ul><li><a href="https://web.archive.org/web/20230325233550/https://www.espositori-pubblicitari.it/" target="_blank" title="Espositori Pubblicitari">Espositori Pubblicitari</a> (converted to a responsive theme and added structured data for products and news)</li><li><a href="https://www.plexiarredo.it" target="_blank" title="Plexi Arredo">Plexi Arredo</a> (integrated Google Shopping and added structured data for products)</li></ul>',
+        description_cv: '<ul><li>In charge of all the production for 2 years out of 3</li><li>Developed and maintained WP and Drupal sites</li><li>SEO optimized already created sites in WP, Drupal and Magento and achieved better ranks in Google search</li></ul>',
         start_date: '2015-05-01',
         end_date: '2018-06-15',
         projects: [
             {
                 title: 'EuroGru Amici',
-                url: 'http://www.eurogruamici.com/',
+                url: 'https://www.eurogruamici.com/',
                 technologies: ['d8'],
                 description: '<p>One of the simplest and lightest Drupal 8 website built, most part of the content are high quality photos and they are displayed by using Views.</p><p>The website is based on the Bootstrap theme and it\'s been optimized for search engines so it\'s light and easy to navigate, both from desktop and mobile</p>',
                 publish_date: '2020-04-12',
@@ -265,7 +265,7 @@ export const JobList = [
             },
             {
                 title: 'Mira',
-                url: 'https://www.mira-srl.com/',
+                url: 'https://web.archive.org/web/20190129221656/http://www.mira-srl.com/',
                 technologies: ['wp'],
                 description: '<p>This is the first WordPress website that I\'ve 100% developed since I\'ve started working at Magic, it\'s based on a customised version of the "Twenty Thirteen" theme as it was the most similar theme based on the graphic proposal.</p><p>The contact page is based on the CF7 plugin and the newsletter is connected to the MailUp service</p>',
                 publish_date: '2020-04-12',
@@ -297,7 +297,7 @@ export const JobList = [
             },
             {
                 title: 'Espositori Pubblicitari',
-                url: 'https://www.espositori-pubblicitari.it/',
+                url: 'https://web.archive.org/web/20230325233550/https://www.espositori-pubblicitari.it/',
                 technologies: ['magento'],
                 description: '<p>This is one of the ecommerce handled internally and based on magento, the project has started more than 10 years ago so when we understand that the most of the traffic comes from mobile, the theme as been converted in order to make it optimized for smartphone and tablet.</p><p>In addition to make it responsive, we made it as light as we could because it loaded 7 fonts and bigger images than what we needed.</p><p>Thanks to all this fixes, the website weight drop by 30% and it has speed up a little. Better improvement would be achieved by updating some of the plugins but we could not because they will not be compatible with the current CMS version</p>',
                 publish_date: '2020-04-12',
