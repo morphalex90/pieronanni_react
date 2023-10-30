@@ -8,7 +8,7 @@ export const JobList = [
         },
         location: 'London, UK',
         description: '<p>Developed the main API, the main site, the user panel and the admin panel</p><p>Improved Google ranks and achieved 50% more users in the past 2 months</p>',
-        description_cv: '<ul><li>Developed the API in Laravel; the site, the user panel and the admin panel in Next.js</li><li>Implemented Spotify API and got updated informations of around 7M artists</li><li>Built the song uploader that automatically compress to mp3 and upload to AWS S3 and got around 4k songs</li><li>Improved Google ranks and achieved 50% more users in the past 2 months</li></ul>',
+        description_cv: '<ul><li>Developed the API in Laravel; the site, the user panel and the admin panel in Next.js</li><li>Implemented Spotify API and got updated informations of around 7M artists</li><li>Built the song uploader that compress to mp3 and upload to AWS S3 and got around 4k songs</li><li style="margin-bottom: 0;">Improved Google ranks and achieved 50% more users in the past 2 months</li></ul>',
         start_date: '2022-05-09',
         end_date: '2023-10-31',
         projects: [
@@ -31,7 +31,7 @@ export const JobList = [
         },
         location: 'London, UK',
         description: '<p>Web Developer at PurrDigital</p><ul><li>Develop and publish the first Drupal 8 and 9 projects of the company</li><li>Optimize sites with best practices and from a code / security prospective</li></ul>',
-        description_cv: '<ul><li>Developed and published the first Drupal 8 and 9 projects of the company</li><li>Optimised WordPress and Drupal sites with best practices and from a code / security prospective</li></ul>',
+        description_cv: '<ul><li>Developed and published the first Drupal 8 and 9 projects of the company</li><li>Optimised WordPress and Drupal sites with best practices and from a code / security prospective</li><li>Created multiple tools to convert structure data from old sites to new ones</li></ul>',
         start_date: '2018-11-12',
         end_date: '2022-05-06',
         projects: [
@@ -45,7 +45,7 @@ export const JobList = [
             },
             {
                 title: 'Elder',
-                url: 'https://www.elder.org/',
+                url: 'https://web.archive.org/web/20220501131927/https://www.elder.org/',
                 technologies: ['wp'],
                 description: '<p>Elder was previously hosted in an online CMS, so the first thing we has to do was the convert all pages from their structure to the new structure, in order to keep all the content</p><p>It took significally time but we were able to convert all with the new gutenberg custom block structure</p>',
                 publish_date: '2020-04-12',
@@ -61,7 +61,7 @@ export const JobList = [
             },
             {
                 title: 'AHSNNetwork',
-                url: 'https://www.ahsnnetwork.com/',
+                url: 'https://web.archive.org/web/20210414050737/https://www.ahsnnetwork.com/',
                 technologies: ['wp'],
                 description: '<p>AHSNNetwork started as a very slow WordPress Visual Composer website that we converted to be more flexible</p><p>Previously the main site and the Atlas site were 2 separated domains, we converted them to be a single site with the possiblity to have different design headers depending on a field inside each page</p>',
                 publish_date: '2020-04-12',
@@ -94,7 +94,7 @@ export const JobList = [
         },
         location: 'London, UK',
         description: '<p>In my personal free time I like creating websites for people who is in need:</p><ul><li><a href="https://www.saraannanadalini.com" target="_blank" title="Visit Sara Anna Nadalini">Sara Anna Nadalini</a> (WordPress, personal portfolio)</li><li><a href="https://www.labuonabottega.it" target="_blank" title="Visit La Buona Bottega">La Buona Bottega</a> (Drupal 8, e-commerce based on Ubercart and Bootstrap)</li><li><a href="https://www.animazionelepiccolepesti.it" target="_blank" title="Visit Animazione le Piccole Pesti">Animazione le Piccole Pesti</a> (WordPress based on 100% custom blocks for Gutenberg. This side does have a <a href="https://store.animazionelepiccolepesti.it/" target="_blank" title="Visit Animazione le Piccole Pesti Store">store</a> on a subdomain, Drupal based)</li></ul><p>I love experimenting with new ideas and creating useful tools:</p><ul><li><a href="https://www.pieronanni.com" target="_blank" title="Visit Piero Nanni">Piero Nanni</a> (Drupal 8, my personal website)</li><li><a href="https://www.cronometro.info" target="_blank" title="Cronometro.info">Cronometro.info</a> (<a href="https://github.com/morphalex90/cronometro.info" target="_blank" title="View Cronometro.info on GitHub">Github</a>)</li><li><a href="https://tools.morpheus90.com" target="_blank" title="Visit SEO Tools">SEO Tools</a> (PHP, useful checkups that I usually check on a website. Currently rebuilding in Laravel)</li></ul>',
-        description_cv: '<ul><li>Built tools and websites for clients and myself</li><li>Tested latest technology and best practices on current and new projects</li></ul>',
+        description_cv: '<ul><li>Built tools and websites for clients and myself in WordPress, Drupal, Laravel and React</li><li>Tested latest technology and best practices on current and new projects</li></ul>',
         start_date: '2016-03-01',
         end_date: null,
         projects: [
