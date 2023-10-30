@@ -138,7 +138,7 @@ export default function Cv() {
 
                     <ul>
                         <li>Italian - mother tongue</li>
-                        <li>English</li>
+                        <li>English - fluent</li>
                     </ul>
 
                 </div>
