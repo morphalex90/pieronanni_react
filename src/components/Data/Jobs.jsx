@@ -31,7 +31,7 @@ export const JobList = [
         },
         location: 'London, UK',
         description: '<p>Web Developer at PurrDigital</p><ul><li>Develop and publish the first Drupal 8 and 9 projects of the company</li><li>Optimize sites with best practices and from a code / security prospective</li></ul>',
-        description_cv: '<ul><li>Optimised WP and Drupal sites with best practices and from a code and security prospective, converted to be composer based and deployed to Kinsta and Ploi with CI/CD</li><li>Created several tools to export and convert page content from old to new sites</li><li>Developed and published the first Drupal 8  project of the company to be a multisite with the possibility to easly add new sites</li></ul>',
+        description_cv: '<ul><li>Optimised WP and Drupal sites with best practices and from a code and security prospective, converted to be composer based and deployed to Kinsta and Ploi with CI/CD</li><li>Created several tools to export and convert page content from old to new sites</li><li>Developed and published the first Drupal 8  project of the company to be a multisite with the possibility to easily add new sites</li></ul>',
         start_date: '2018-11-12',
         end_date: '2022-05-06',
         projects: [
