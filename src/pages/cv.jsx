@@ -83,7 +83,6 @@ export default function Cv() {
                             <ul>
                                 <li>WordPress</li>
                                 <li>Drupal 6, 7, 8, 9</li>
-                                {/* <li>Magento 1</li> */}
                             </ul>
                         </li>
 
