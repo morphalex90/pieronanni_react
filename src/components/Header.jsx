@@ -24,7 +24,11 @@ export default function Header() {
                 </div>
 
                 <div className="header__burger">
-                    <button type="button" className="header__burger__icon" onClick={() => openMobileMenu()}></button>
+                    <button type="button" className="header__burger__icon" onClick={() => openMobileMenu()}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
 
             </div>
