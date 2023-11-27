@@ -17,6 +17,24 @@
 
     &__menu {
         width: 100%;
-        margin: auto;
+        // margin: auto;
+    }
+
+    &__burger {
+        top: 20px;
+        right: 20px;
+        position: absolute;
+
+        @media only screen and (min-width: 768px) {
+            display: none;
+        }
+
+        &__icon {
+            background-color: red;
+            cursor: pointer;
+            border: none;
+            height: 40px;
+            width: 40px;
+        }
     }
 }

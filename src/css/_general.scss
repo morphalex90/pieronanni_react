@@ -101,6 +101,11 @@ main {
     // min-height: calc(100vh - 46px);
     overflow: hidden;
 
+    .--open & {
+        position: relative;
+        z-index: -1;
+    }
+
     .homepage & {
         display: flex;
         justify-content: center;
