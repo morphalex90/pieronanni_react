@@ -73,7 +73,7 @@ export default function Cv() {
                             <ul>
                                 <li>PHP</li>
                                 <li>HTML5</li>
-                                <li>JS, jQuery & TS</li>
+                                <li>JS & TS</li>
                                 <li>CSS3, Sass & BEM</li>
                                 <li>SQL</li>
                             </ul>
