@@ -7,9 +7,9 @@ import { JobList } from '@/components/Data/Jobs';
 import { TechnologiesData } from '@/components/Data/Technologies';
 
 export default function Projects() {
-    const [jobs, setJobs] = useState([]);
-    const [technologies, setTechnologies] = useState([]);
-    const [activeTechnology, setActiveTechnology] = useState(null);
+    const [jobs, setJobs] = useState<any[]>([]);
+    const [technologies, setTechnologies] = useState<any[]>([]);
+    const [activeTechnology, setActiveTechnology] = useState<any>(null);
 
     useEffect(() => {
         setJobs(JobList);
@@ -17,13 +17,13 @@ export default function Projects() {
         setActiveTechnology('*');
     }, []);
 
-    const filterProjects = (tech) => {
+    const filterProjects = (tech: any) => {
         setActiveTechnology(tech); // set active tech
 
         if (tech === '*') { // if it's 'All', re load all
             setJobs(JobList);
         } else { // otherwise filter by tech
-            setJobs(prevState => {
+            setJobs((prevState: any) => {
                 const newState = JobList.map(obj => {
                     const tmp = obj.projects.filter(project => project.technologies.indexOf(tech) !== -1)
                     // console.log(tmp);
@@ -71,7 +71,7 @@ export default function Projects() {
                                 <h3 className="text-center"><a href={job.company.url} target="_blank" rel="noreferrer">{job.company.name}</a></h3>
 
                                 <div className="projects">
-                                    {job.projects?.map((project, projectId) =>
+                                    {job.projects?.map((project: any, projectId: any) =>
                                         <Project key={projectId} project={project} delay={(projectId + 1) / 12} />
                                     )}
                                 </div>
