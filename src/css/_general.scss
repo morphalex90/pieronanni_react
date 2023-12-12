@@ -140,6 +140,10 @@ main {
             flex-grow: 1;
             flex-basis: 0;
         }
+
+        &.--reverse {
+            flex-direction: row-reverse;
+        }
     }
 }
 
