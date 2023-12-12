@@ -28,13 +28,7 @@ export default function Modal({ show, onClose, title, content }) {
                     <button className="modal__close" type="button" onClick={handleCloseClick}>[x]</button>
                 </div>
                 <div className="modal__content">
-                    <div className="d-flex">
-
-                        <div>
-                            {content.images.map((image, id) =>
-                                <Image key={id} src={require('../img/projects/' + image).default} alt={title || content.title} title={title || content.title} />
-                            )}
-                        </div>
+                    <div className="d-flex --reverse">
 
                         <div>
                             {parse(DOMPurify.sanitize(content.description, { USE_PROFILES: { html: true } }))}
@@ -46,6 +40,13 @@ export default function Modal({ show, onClose, title, content }) {
                                 }
                             </div>
                         </div>
+
+                        <div>
+                            {content.images.map((image, id) =>
+                                <Image key={id} src={require('../img/projects/' + image).default} alt={title || content.title} title={title || content.title} />
+                            )}
+                        </div>
+
                     </div>
 
                 </div>
