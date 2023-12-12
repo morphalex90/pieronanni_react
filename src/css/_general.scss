@@ -106,7 +106,8 @@ main {
         z-index: -1;
     }
 
-    .homepage & {
+    .homepage &,
+    .page-404 & {
         display: flex;
         justify-content: center;
     }
@@ -116,7 +117,8 @@ main {
     padding-top: 55px;
     flex: 1 1;
 
-    .homepage & {
+    .homepage &,
+    .page-404 & {
         display: flex;
     }
 
