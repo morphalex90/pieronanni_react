@@ -68,13 +68,17 @@ export default function Projects() {
                     <>
                         {jobs.map(job =>
                             <div key={job.id} className="jobs">
-                                <h3 className="text-center"><a href={job.company.url} target="_blank" rel="noreferrer">{job.company.name}</a></h3>
+                                {job.projects?.length > 0 &&
+                                    <>
+                                        <h3 className="text-center"><a href={job.company.url} target="_blank" rel="noreferrer">{job.company.name}</a></h3>
 
-                                <div className="projects">
-                                    {job.projects?.map((project: any, projectId: any) =>
-                                        <Project key={projectId} project={project} delay={(projectId + 1) / 12} />
-                                    )}
-                                </div>
+                                        <div className="projects">
+                                            {job.projects?.map((project: any, projectId: any) =>
+                                                <Project key={projectId} project={project} delay={(projectId + 1) / 12} />
+                                            )}
+                                        </div>
+                                    </>
+                                }
                             </div>
                         )}
                     </>
