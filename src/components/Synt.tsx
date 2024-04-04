@@ -7,7 +7,7 @@ function Synt() {
         horizontalLines.push(i);
     }
 
-    function translateAmount(n) {
+    function translateAmount(n: number) {
         let total = 0;
         for (let i = 1; i <= n; i++) {
             total = total + (firstStep * (0.975 ** n))
@@ -15,7 +15,7 @@ function Synt() {
         return total * 8;
     }
 
-    function turnAmount(n) {
+    function turnAmount(n: number) {
         return -(0.25 * (0.65 ** n) - 0.25);
     }
 
