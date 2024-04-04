@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { motion } from 'framer-motion';
 
 import Layout from '@layouts/Layout';
-import Songs from '@layouts/Songs';
+// import Songs from '@layouts/Songs';
 
 export default function Contact() {
 
@@ -88,7 +88,7 @@ export default function Contact() {
                             </div>
 
                             <div className="d-flex">
-                                <div className="form__field">
+                                <div>
                                     <label htmlFor="privacy">
                                         <input name="privacy" id="privacy" type="checkbox" onChange={handleChange} defaultChecked={contact.privacy} required />
                                         <span> Privacy</span>
@@ -99,7 +99,9 @@ export default function Contact() {
                             </div>
                         </form>
 
-                        <div style={{ marginTop: 20 }}>{response}</div>
+                        {response &&
+                            <div style={{ marginTop: 20 }}>{response}</div>
+                        }
                     </motion.div>
                 </div>
 
