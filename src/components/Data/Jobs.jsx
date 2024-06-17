@@ -1,5 +1,28 @@
 export const JobList = [
     {
+        id: 6,
+        title: 'Developer',
+        company: {
+            name: 'Cyber-Duck',
+            url: 'https://www.cyber-duck.co.uk/',
+        },
+        location: 'London, UK',
+        description: '<p>Managing daily tasks to resolve issues efficiently</p><p>Contributing to projects focused on refactoring platform sections</p>',
+        description_cv: '<ul><li>Managing daily tasks to resolve issues efficiently</li><li>Contributing to projects focused on refactoring platform sections</li></ul>',
+        start_date: '2024-01-08',
+        end_date: null,
+        projects: [
+            {
+                title: 'Worcester Bosch',
+                url: 'https://www.worcester-bosch.co.uk',
+                technologies: ['laravel', 'react'],
+                description: '<p>United Kingdom based heating and hot water products manufacturer</p>',
+                publish_date: '2024-04-12',
+                images: ['worcesterbosch.webp']
+            },
+        ],
+    },
+    {
         id: 5,
         title: 'Lead Developer',
         company: {
