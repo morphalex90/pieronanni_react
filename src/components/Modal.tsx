@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
+import { MouseEvent, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import Image from 'next/image';
 import parse from 'html-react-parser';
 import DOMPurify from 'dompurify';
 
-export default function Modal({ show, onClose, title, content }) {
+export default function Modal({ show, onClose, title, content }: { show: boolean, onClose: any, title?: string, content: any }) {
     const [isBrowser, setIsBrowser] = useState(false);
 
     useEffect(() => {
@@ -14,7 +14,7 @@ export default function Modal({ show, onClose, title, content }) {
         }
     }, [content]);
 
-    const handleCloseClick = (e) => {
+    const handleCloseClick = (e: MouseEvent<HTMLDivElement> | MouseEvent<HTMLButtonElement>) => {
         if (e.target === e.currentTarget) {
             onClose();
         }
@@ -42,7 +42,7 @@ export default function Modal({ show, onClose, title, content }) {
                         </div>
 
                         <div>
-                            {content.images.map((image, id) =>
+                            {content.images.map((image: string, id: string) =>
                                 <Image key={id} src={require('../img/projects/' + image).default} alt={title || content.title} title={title || content.title} />
                             )}
                         </div>
@@ -58,9 +58,9 @@ export default function Modal({ show, onClose, title, content }) {
     if (isBrowser) {
         return ReactDOM.createPortal(
             modalContent,
-            document.getElementById("modal-root")
+            document.getElementById("modal-root") || document.body
         );
-    } else {
-        return null;
     }
+
+    return null;
 };

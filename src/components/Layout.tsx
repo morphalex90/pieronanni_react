@@ -1,18 +1,21 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, ReactNode } from 'react';
 
 import Synt from '@layouts/Synt';
 import Header from '@layouts/Header';
 import Footer from '@layouts/Footer';
 
-export default function Layout({ className = '', children }) {
-    const [mainPadding, setMainPadding] = useState(null);
+export default function Layout({ className = '', children }: { className: string, children: ReactNode }) {
+    const [mainPadding, setMainPadding] = useState(0);
 
     useEffect(() => {
-        const body = document.body;
+        const { body } = document;
         body.removeAttribute('class');
         body.classList.add(className);
 
-        setMainPadding(document.getElementsByClassName('header')[0].offsetHeight);
+        const header: HTMLElement = document.getElementsByClassName("header")[0] as HTMLElement;
+        if (header !== null) {
+            setMainPadding(header.offsetHeight)
+        }
     }, [mainPadding, className]);
 
     return (

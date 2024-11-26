@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { CSSProperties, useState } from 'react'
 import Head from 'next/head';
 import { motion } from 'framer-motion';
 import Layout from '@layouts/Layout';
@@ -6,6 +6,17 @@ import { JobList } from '@/components/Data/Jobs';
 import Link from 'next/link';
 import parse from 'html-react-parser';
 import DOMPurify from 'dompurify';
+
+// interface JobInterface {
+//     id: number,
+//     start_date: number | string,
+//     end_date: number | string,
+//     company: JobCompanyInterface
+// }
+// interface JobCompanyInterface {
+//     name: string,
+// }
+
 
 export default function About() {
     const [jobs, setJobs] = useState(JobList);
@@ -48,7 +59,7 @@ export default function About() {
                             {/* Jobs */}
                             <div className="timeline__jobs">
                                 {jobs.length > 0 &&
-                                    jobs.map(job => {
+                                    jobs.map((job: any) => {
                                         const marginLeft = ((job.start_date.substring(0, 4) - startYear));
                                         let endDate = null;
 
@@ -59,8 +70,10 @@ export default function About() {
                                         }
 
                                         const width = (endDate - job.start_date.substring(0, 4) + 1);
+
+                                        const style = { '--unit-margin-left': marginLeft, '--unit-width': width, '--tot-years': years.length } as CSSProperties
                                         return (
-                                            <div key={job.id} className={job.id === activeJob ? ' --active' : ''} style={{ '--unit-margin-left': marginLeft, '--unit-width': width, '--tot-years': years.length }} onClick={() => { setActiveJob(job.id) }}>{job.company.name}</div>
+                                            <div key={job.id} className={job.id === activeJob ? ' --active' : ''} style={style} onClick={() => { setActiveJob(job.id) }}>{job.company.name}</div>
                                         )
                                     })
                                 }

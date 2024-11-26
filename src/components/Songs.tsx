@@ -1,10 +1,16 @@
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 
+interface SongInterface {
+    name: string,
+    image_url: string,
+    song_url: string,
+}
+
 export default function ShowSongs() {
-    const [songs, setSongs] = useState([]);
+    const [songs, setSongs] = useState<SongInterface[]>([]);
     const [selectedSong, setSelectedSong] = useState(0);
-    const audioRef = useRef();
+    const audioRef = useRef<HTMLAudioElement>(null);
 
     useEffect(() => {
         getPlaylist('c69ad6af-b330-4cfb-b81b-c690c2e00ddf');
@@ -40,18 +46,18 @@ export default function ShowSongs() {
     //         });
     // }
 
-    const getPlaylist = (playlistKey) => {
+    const getPlaylist = (playlistKey: string) => {
         fetch('https://api.soundpickr.com/api/v1/metaplayer/playlist/' + playlistKey, {
             method: 'GET',
             headers: {
-                'x-api-key': process.env.NEXT_PUBLIC_SP_API_KEY,
+                // 'x-api-key': process.env.NEXT_PUBLIC_SP_API_KEY,
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
         })
             .then(response => response.json())
             .then(data => {
-                data.songs.map(song => {
+                data.songs.map((song: any) => {
                     // console.log(song);
                     // setSongs([...songs, { image_url: song.image_url, song_url: song.song_url }])
                     setSongs(prevState => [{ name: song.name, artist: song.artist?.name, image_url: song.image_url, song_url: song.song_url + '?api_key=' + process.env.NEXT_PUBLIC_SP_API_KEY }, ...prevState]);
@@ -87,7 +93,7 @@ export default function ShowSongs() {
             </div>
             <div className="player__list">
                 {songs.length !== 0 &&
-                    songs.map((song, id) =>
+                    songs.map((song: any, id: number) =>
                         <div key={id} className={'player__list__song' + (selectedSong === id ? ' --selected' : '')} onClick={() => setSelectedSong(id)}>
                             <div className="player__list__song__name">{song.name}</div>
                             <div className="player__list__song__artist">{song.artist?.name}</div>
